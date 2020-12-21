@@ -2,7 +2,7 @@
  
 
 ##  딥러닝 알아가기 첫걸음
- * 웹 페이지 주소 : https://ldjwj.github.io/DL_Basic
+ * 웹 페이지 주소 : https://ldjwj.github.io/DL_Basic/
  * [일정](https://ldjwj.github.io/DL_Basic/plan20201221.png)
 ### 딥러닝 기본 및 실습
 #### PDF
@@ -14,13 +14,16 @@
 ### SourceCode
 
 ### 딥러닝 시작하기
- * numpy 기본 [pdf](https://ldjwj.github.io/part04_01_dl_start/ch01_01_KerasStart_numpy.html)        [HTML](https://ldjwj.github.io/part04_01_dl_start/ch01_01_KerasStart_numpy.pdf)
- * Bike Sharing Demand [pdf](https://ldjwj.github.io/part04_01_dl_start/ch01_02_Neural_Net_Bike.html)        [HTML](https://ldjwj.github.io/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
- * Titanic [pdf](https://ldjwj.github.io/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html)        [HTML](https://ldjwj.github.io/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
+ * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.pdf)
+ * Bike Sharing Demand [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.html)        [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
+ * Titanic [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html)        [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
  
 ### MNIST 이미지 데이터 셋
- * MNIST 01 [HTML](https://ldjwj.github.io/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.html)        [PDF](https://ldjwj.github.io/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.pdf)
- * MNIST 02 [HTML](https://ldjwj.github.io/part04_02_dl_mnist/ch01_04_DL_mnist02_up.html)        [PDF](https://ldjwj.github.io/part04_02_dl_mnist/ch01_04_DL_mnist02_up.pdf)
- * MNIST 03 [HTML](https://ldjwj.github.io/part04_02_dl_mnist/ch01_05_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/part04_02_dl_mnist/ch01_05_DL_mnist03_up.pdf)
- * MNIST 04 [HTML](https://ldjwj.github.io/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.pdf)
+ * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.pdf)
+ * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist02_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist02_up.pdf)
+ * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.pdf)
+ * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.pdf)
  
+### 캐글
+ * Titanic - Machine Learning from Disaster [Link](https://www.kaggle.com/c/titanic)
+ * Bike Sharing Demand [Link](https://www.kaggle.com/c/bike-sharing-demand)
