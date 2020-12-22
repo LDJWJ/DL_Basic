@@ -4,8 +4,10 @@
 ##  딥러닝 알아가기 첫걸음
  * 웹 페이지 주소 : https://ldjwj.github.io/DL_Basic/
  * [일정](https://ldjwj.github.io/DL_Basic/plan20201221.png)
+ 
 ### 딥러닝 기본 및 실습
 #### PDF
+ * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01_DL_BASIC_ENV_MAKE.pdf)
  * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
  * 딥러닝 입문 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01B_DLML_딥러닝기초.pdf)
  * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf)
