@@ -26,6 +26,11 @@
  * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.pdf)
  * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.pdf)
  
+### 영화 리뷰 긍정/부정 분류, 뉴스 기사 분류
+ * 영화 리뷰 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.pdf)
+ * 뉴스 기사 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.pdf)
+
+
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link](https://www.kaggle.com/c/titanic)
  * Bike Sharing Demand [Link](https://www.kaggle.com/c/bike-sharing-demand)
