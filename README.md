@@ -44,6 +44,7 @@
  * CNN (3) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab.pdf)
  * CNN (4) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wColab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wColab.pdf)
 
+
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link](https://www.kaggle.com/c/titanic)
  * Bike Sharing Demand [Link](https://www.kaggle.com/c/bike-sharing-demand)
