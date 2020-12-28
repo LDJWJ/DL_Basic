@@ -44,7 +44,13 @@
  * CNN (3) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab.pdf)
  * CNN (4) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wColab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wColab.pdf)
 
+### Tensorflow 2.x 실습
+ * MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.pdf)
+ * fashion MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.pdf)
+ * Dogs vs Cats  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
+ * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/)
 
 ### 캐글
- * Titanic - Machine Learning from Disaster [Link](https://www.kaggle.com/c/titanic)
- * Bike Sharing Demand [Link](https://www.kaggle.com/c/bike-sharing-demand)
+ * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
+ * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
+ * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
