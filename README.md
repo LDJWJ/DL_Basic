@@ -56,9 +56,9 @@
  * 모델 성능 개선 [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.pdf)
 
 ### 딥러닝 자연어
- * 자연어 처리1  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
- * 자연어 처리2  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_preprocessing_embedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_preprocessing_embedding.pdf)
- * 자연어 처리3  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_embedding03_pretraining.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_embedding03_pretraining.pdf)
+ * 텍스트 데이터 처리(1)[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
+ * 텍스트 데이터 처리(1) [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.pdf)
+ * 텍스트 데이터 처리(3)-사전훈련모델[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.pdf)
  
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
