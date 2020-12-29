@@ -13,6 +13,8 @@
  * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf)
  * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN_202012_v01.pdf)
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
+ * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
+ * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
  
 ### SourceCode
 
@@ -50,6 +52,14 @@
  * Dogs vs Cats  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
  * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.pdf)
 
+### 모델 성능 개선
+ * 모델 성능 개선 [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.pdf)
+
+### 딥러닝 자연어
+ * 자연어 처리1  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
+ * 자연어 처리2  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_preprocessing_embedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_preprocessing_embedding.pdf)
+ * 자연어 처리3  [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_embedding03_pretraining.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_embedding03_pretraining.pdf)
+ 
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
