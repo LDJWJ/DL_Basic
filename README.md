@@ -15,7 +15,7 @@
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
- * RNN 기본 입문 [PDF] (https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
+ * RNN 기본 입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
  
 ### SourceCode
 ### 딥러닝 시작하기
