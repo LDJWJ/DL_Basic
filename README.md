@@ -15,9 +15,9 @@
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
+ * RNN 기본 입문 [PDF] (https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
  
 ### SourceCode
-
 ### 딥러닝 시작하기
  * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.pdf)
  * Bike Sharing Demand [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.html)        [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
@@ -59,6 +59,10 @@
  * 텍스트 데이터 처리(1)[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
  * 텍스트 데이터 처리(1) [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.pdf)
  * 텍스트 데이터 처리(3)-사전훈련모델[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.pdf)
+ 
+### 딥러닝 RNN
+ * RNN(numpy 구현) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.pdf)
+ * RNN(IMDB 긍정부정) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.pdf)
  
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
