@@ -16,6 +16,7 @@
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
  * RNN 기본 입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
+ * GAN 기본 입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/part04_DL04_기본_GAN_202012_v04_.pdf)
  
 ### SourceCode
 ### 딥러닝 시작하기
@@ -63,6 +64,14 @@
 ### 딥러닝 RNN
  * RNN(numpy 구현) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.pdf)
  * RNN(IMDB 긍정부정) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.pdf)
+ 
+### 딥러닝 GAN
+ * GAN - 적대적 생성 신경망
+[HTML](https://ldjwj.github.io/DL_Basic/part04_09_GANch08_03_keras_gan실습.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_gan실습.pdf)
+
+ * GAN - NeuralStyleTransfer
+[HTML](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
+
  
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
