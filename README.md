@@ -20,6 +20,7 @@
  
 ### SourceCode
 ### 딥러닝 시작하기
+ * python기본 라이브러리 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/DL01_01_Python_Library_v10.pdf)
  * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.pdf)
  * Bike Sharing Demand [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.html)        [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
  * Titanic [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html)        [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
