@@ -11,7 +11,7 @@
  * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
  * 딥러닝 입문 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01B_DLML_딥러닝기초.pdf)
  * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf)
- * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN_202012_v02.pdf)
+ * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN_202104_v02.pdf)
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
