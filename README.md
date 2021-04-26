@@ -11,7 +11,7 @@
  * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
  * 딥러닝 입문 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01B_DLML_딥러닝기초.pdf)
  * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf)
- * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN_202012_v02.pdf)
+ * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN_202104_v02.pdf)
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
@@ -38,10 +38,10 @@
  
 ### CNN
  * CNN 231n 참조 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_02/ch05_04_CNN_D_add_cs231n.html)
- * CNN (2) [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A.pdf)
- * CNN (3) [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_B.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_B.pdf)
- * CNN (4) [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_C.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_C.pdf)
-
+ * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.pdf)
+ * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.pdf)
+ * CNN Upgrade [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_B1_add.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_B1_add.pdf)
+ * CNN Upgrade [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_B2.pdf)
 
 ### Cat vs Dog Dataset
  * CNN (1) - 기본모델 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab.pdf)
