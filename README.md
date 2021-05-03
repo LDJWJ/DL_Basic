@@ -79,3 +79,5 @@
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
  * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
+
+* 내용중의 일부는 케라스 창시자에게 배우는 딥러닝을 참조하였습니다.
