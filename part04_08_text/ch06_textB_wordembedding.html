@@ -10,9 +10,9 @@
 
 <style type="text/css">
     pre { line-height: 125%; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
@@ -14266,6 +14266,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>단어와 벡터를 연관짓는 강력하고 인기 있는 또 다른 방법 중의 하나는 단어 임베딩이라는 밀집 단어 벡터를 사용하는 것.</li>
+<li>단어 임베딩은 언어를 기하학적 공간에 매핑하는 것.</li>
+<li>잘 구축된 임베딩 공간에서는 동의어가 비슷한 단어 벡터로 임베딩된다.</li>
 </ul>
 
 </div>
@@ -14288,6 +14290,8 @@ a.anchor-link {
 <li>보통 단어 임베딩은 256, 512, 1024차원의 단어 임베딩을 사용.</li>
 </ul>
 </li>
+<li>A. 원-핫 인코딩이나 해싱으로 얻은 단어 표현은 희소하고 고차원이며, 수동으로 인코딩된다.</li>
+<li>B. 단어 임베딩은 조밀하고 비교적 저차원이며 데이터로부터 학습</li>
 </ul>
 
 </div>
@@ -14352,7 +14356,11 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#47928;&#51228;&#45716; &#49324;&#46988;&#51032; &#50616;&#50612;&#47484; &#50756;&#51204;&#55176; &#47588;&#54609;&#49884;&#53420; &#49688; &#51080;&#45716; &#51060;&#49345;&#51201;&#51064; &#45800;&#50612; &#51076;&#48288;&#46377; &#44277;&#44036;&#51012; &#47564;&#46300;&#45716; &#44163;&#51060;&#45796;. &#51060;&#47088; &#44277;&#44036;&#51060; &#51080;&#51012;&#44620;?<a class="anchor-link" href="#&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#182;</a></h3>
+<h3 id="&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#47928;&#51228;&#45716; &#49324;&#46988;&#51032; &#50616;&#50612;&#47484; &#50756;&#51204;&#55176; &#47588;&#54609;&#49884;&#53420; &#49688; &#51080;&#45716; &#51060;&#49345;&#51201;&#51064; &#45800;&#50612; &#51076;&#48288;&#46377; &#44277;&#44036;&#51012; &#47564;&#46300;&#45716; &#44163;&#51060;&#45796;. &#51060;&#47088; &#44277;&#44036;&#51060; &#51080;&#51012;&#44620;?<a class="anchor-link" href="#&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#182;</a></h3><ul>
+<li>아마도 가능하겠지만, 완벽하게는 어려울 수 있다.</li>
+<li>다만, 최근에는 많은 발전을 이루었다.</li>
+</ul>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14393,7 +14401,7 @@ a.anchor-link {
 <h3 id="Embedding&#52789;&#51032;-&#51077;&#47141;">Embedding&#52789;&#51032; &#51077;&#47141;<a class="anchor-link" href="#Embedding&#52789;&#51032;-&#51077;&#47141;">&#182;</a></h3><ul>
 <li>(samples, sequence_length) <ul>
 <li>samples : 샘플수</li>
-<li>sequence_length : 시퀀스 길이</li>
+<li>sequence_length : 시퀀스 길이 ( 단순히 길이)</li>
 <li>정수 텐서를 입력으로 받음. 2D텐서</li>
 </ul>
 </li>
@@ -14468,9 +14476,9 @@ a.anchor-link {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>&lt;__array_function__ internals&gt;:5: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
-c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:159: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:159: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
   x_train, y_train = np.array(xs[:idx]), np.array(labels[:idx])
-c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:160: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:160: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
   x_test, y_test = np.array(xs[idx:]), np.array(labels[idx:])
 </pre>
 </div>
@@ -14520,11 +14528,11 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 리뷰의 길이와 10개 단어(인덱스) 보기</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14540,7 +14548,44 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 14, 22, 16, 43, 530, 973, 1622, 1385, 65, 458, 4468, 66, 3941, 4, 173, 36, 256, 5, 25, 100, 43, 838, 112, 50, 670, 2, 9, 35, 480, 284, 5, 150, 4, 172, 112, 167, 2, 336, 385, 39, 4, 172, 4536, 1111, 17, 546, 38, 13, 447, 4, 192, 50, 16, 6, 147, 2025, 19, 14, 22, 4, 1920, 4613, 469, 4, 22, 71, 87, 12, 16, 43, 530, 38, 76, 15, 13, 1247, 4, 22, 17, 515, 17, 12, 16, 626, 18, 2, 5, 62, 386, 12, 8, 316, 8, 106, 5, 4, 2223, 5244, 16, 480, 66, 3785, 33, 4, 130, 12, 16, 38, 619, 5, 25, 124, 51, 36, 135, 48, 25, 1415, 33, 6, 22, 12, 215, 28, 77, 52, 5, 14, 407, 16, 82, 2, 8, 4, 107, 117, 5952, 15, 256, 4, 2, 7, 3766, 5, 723, 36, 71, 43, 530, 476, 26, 400, 317, 46, 7, 4, 2, 1029, 13, 104, 88, 4, 381, 15, 297, 98, 32, 2071, 56, 26, 141, 6, 194, 7486, 18, 4, 226, 22, 21, 134, 476, 26, 480, 5, 144, 30, 5535, 18, 51, 36, 28, 224, 92, 25, 104, 4, 226, 65, 16, 38, 1334, 88, 12, 16, 283, 5, 16, 4472, 113, 103, 32, 15, 16, 5345, 19, 178, 32]
+1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  리뷰의 길이와 10개 단어(인덱스) 보기</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>   <span class="c1"># 단어가 218개 단어로 구성</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -14560,13 +14605,15 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#45796;&#50577;&#54620; &#44600;&#51060;&#44032; &#47532;&#48624;&#44032; &#51080;&#51012; &#44163;&#51060;&#45796;.<a class="anchor-link" href="#&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#182;</a></h3><ul>
 <li>리뷰에서 맨 마지막 50개 단어를 얻고, 나머지는 버린다. 또는 길이가 짧다면 0으로 채운다.</li>
+<li>시퀀스의 길이가 50개로 한다.</li>
+<li>리스트 형태의 리뷰를 2D 정수 텐서로 변환 : preprocessing.sequence.pad_sequences</li>
 </ul>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 리스트를 (samples, maxlen) 크기의 2D 정수 텐서로 변환합니다.</span>
@@ -14584,10 +14631,11 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_train_n</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test_n</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;처음 : &quot;</span> <span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;변경 후 : &quot;</span><span class="p">,</span> <span class="n">X_train_n</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test_n</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14603,15 +14651,14 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>((25000,), (25000,), (25000, 50), (25000, 50))</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>처음 :  (25000,) (25000,)
+변경 후 :  (25000, 50) (25000, 50)
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14632,7 +14679,7 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -14644,10 +14691,21 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Embedding(단어 인덱스, 임베딩 차원-출력, input_length=시퀀스 길이)<ul>
+<li>출력 (단어 인덱스, 시퀀스 길이, 임베딩 차원-출력)</li>
+</ul>
+</li>
+</ul>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -14655,7 +14713,8 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 <span class="c1"># 나중에 임베딩된 입력을 Flatten 층에서 펼치기 위해 Embedding 층에 </span>
 <span class="c1"># input_length를 지정</span>
 <span class="c1"># Embedding 층의 입력은 2D (samples, maxlen) 이다.</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">maxlen</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">maxlen</span><span class="p">))</span>
+
 <span class="c1"># Embedding 층의 출력 크기는 (samples, maxlen, 8)가 됩니다.</span>
 </pre></div>
 
@@ -14678,7 +14737,7 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3D 임베딩 텐서를 (samples, maxlen * 8) 크기의 2D 텐서로 펼칩니다.</span>
@@ -14719,36 +14778,36 @@ c:\users\front\anaconda3\envs\tf2x\lib\site-packages\tensorflow\python\keras\dat
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-embedding_3 (Embedding)      (None, 50, 16)            160000    
+embedding_3 (Embedding)      (None, 50, 8)             80000     
 _________________________________________________________________
-flatten_2 (Flatten)          (None, 800)               0         
+flatten (Flatten)            (None, 400)               0         
 _________________________________________________________________
-dense_2 (Dense)              (None, 1)                 801       
+dense (Dense)                (None, 1)                 401       
 =================================================================
-Total params: 160,801
-Trainable params: 160,801
+Total params: 80,401
+Trainable params: 80,401
 Non-trainable params: 0
 _________________________________________________________________
 Epoch 1/10
-625/625 [==============================] - 2s 2ms/step - loss: 0.6738 - acc: 0.5963 - val_loss: 0.5053 - val_acc: 0.7730
+625/625 [==============================] - 8s 10ms/step - loss: 0.6797 - acc: 0.5842 - val_loss: 0.5534 - val_acc: 0.7622
 Epoch 2/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.4402 - acc: 0.8120 - val_loss: 0.4120 - val_acc: 0.8048
+625/625 [==============================] - 2s 3ms/step - loss: 0.4908 - acc: 0.7907 - val_loss: 0.4336 - val_acc: 0.7960
 Epoch 3/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.3421 - acc: 0.8562 - val_loss: 0.4029 - val_acc: 0.8146
+625/625 [==============================] - 2s 3ms/step - loss: 0.3752 - acc: 0.8404 - val_loss: 0.4054 - val_acc: 0.8094
 Epoch 4/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2939 - acc: 0.8757 - val_loss: 0.3966 - val_acc: 0.8178
+625/625 [==============================] - 2s 3ms/step - loss: 0.3268 - acc: 0.8595 - val_loss: 0.3994 - val_acc: 0.8122
 Epoch 5/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2637 - acc: 0.8931 - val_loss: 0.4021 - val_acc: 0.8172
+625/625 [==============================] - 2s 3ms/step - loss: 0.2982 - acc: 0.8766 - val_loss: 0.3994 - val_acc: 0.8146
 Epoch 6/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2272 - acc: 0.9105 - val_loss: 0.4103 - val_acc: 0.8168
+625/625 [==============================] - 2s 3ms/step - loss: 0.2614 - acc: 0.8923 - val_loss: 0.4052 - val_acc: 0.8150
 Epoch 7/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2024 - acc: 0.9246 - val_loss: 0.4184 - val_acc: 0.8144
+625/625 [==============================] - 2s 3ms/step - loss: 0.2474 - acc: 0.9027 - val_loss: 0.4118 - val_acc: 0.8194
 Epoch 8/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.1692 - acc: 0.9401 - val_loss: 0.4308 - val_acc: 0.8120
+625/625 [==============================] - 2s 3ms/step - loss: 0.2257 - acc: 0.9141 - val_loss: 0.4213 - val_acc: 0.8122
 Epoch 9/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.1395 - acc: 0.9560 - val_loss: 0.4483 - val_acc: 0.8064
+625/625 [==============================] - 2s 3ms/step - loss: 0.2101 - acc: 0.9212 - val_loss: 0.4294 - val_acc: 0.8148
 Epoch 10/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.1163 - acc: 0.9665 - val_loss: 0.4642 - val_acc: 0.8030
+625/625 [==============================] - 2s 3ms/step - loss: 0.1940 - acc: 0.9273 - val_loss: 0.4405 - val_acc: 0.8106
 </pre>
 </div>
 </div>
@@ -14762,7 +14821,7 @@ Epoch 10/10
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>검증 정확도가 80.3%입니다.</li>
-<li>리뷰 50개의 단어만 사용하여 좋은 결과를 얻었습니다.</li>
+<li>리뷰 50개의 단어(시퀀스 길이)만 사용하여 좋은 결과를 얻었습니다.</li>
 <li>임베딩 층을 펼쳐 하나의 Dense 층으로 훈련하였으므로 입력 시퀀스 있는 각 단어를 독립적으로 다루었습니다.</li>
 <li>단어 사이의 관계나 문장 구조를 고려하지 않음.<ul>
 <li>해결책 : 각 시퀀스 전체를 고려한 특성이 학습되도록 <strong>임베딩 층 위에 순환 층이나 1D 합성곱 층을 추가</strong>하는 것이 좋다.</li>

@@ -69,7 +69,7 @@
  
 ### 딥러닝 GAN
  * GAN - 적대적 생성 신경망
-[HTML](https://ldjwj.github.io/DL_Basic/part04_09_GANch08_03_keras_gan실습.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_gan실습.pdf)
+[HTML](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_gan실습.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_gan실습.pdf)
 
  * GAN - NeuralStyleTransfer
 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
