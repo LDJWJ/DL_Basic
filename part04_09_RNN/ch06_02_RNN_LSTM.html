@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ch06_RNN01_simpleRNN</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ch06_02_RNN_LSTM</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,69 +14259,39 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#45336;&#54028;&#51060;&#47196;-&#44396;&#54788;&#54620;-&#44036;&#45800;&#54620;-RNN">&#45336;&#54028;&#51060;&#47196; &#44396;&#54788;&#54620; &#44036;&#45800;&#54620; RNN<a class="anchor-link" href="#&#45336;&#54028;&#51060;&#47196;-&#44396;&#54788;&#54620;-&#44036;&#45800;&#54620;-RNN">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
-<span class="n">keras</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-
-     </div>
+<h3 id="&#49692;&#54872;-&#49888;&#44221;&#47581;-&#51060;&#54644;&#54616;&#44592;---LSTM">&#49692;&#54872; &#49888;&#44221;&#47581; &#51060;&#54644;&#54616;&#44592; - LSTM<a class="anchor-link" href="#&#49692;&#54872;-&#49888;&#44221;&#47581;-&#51060;&#54644;&#54616;&#44592;---LSTM">&#182;</a></h3>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;2.4.3&#39;</pre>
-</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#54617;&#49845;-&#45236;&#50857;">&#54617;&#49845; &#45236;&#50857;<a class="anchor-link" href="#&#54617;&#49845;-&#45236;&#50857;">&#182;</a></h3><ul>
+<li>LSTM에 대해 알아보기</li>
+</ul>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="LSTM-&#52789;&#51004;&#47196;-&#47784;&#45944;&#51012;-&#44396;&#49457;&#54616;&#44256;-IMDB-&#45936;&#51060;&#53552;&#50640;&#49436;-&#54984;&#47144;">LSTM &#52789;&#51004;&#47196; &#47784;&#45944;&#51012; &#44396;&#49457;&#54616;&#44256; IMDB &#45936;&#51060;&#53552;&#50640;&#49436; &#54984;&#47144;<a class="anchor-link" href="#LSTM-&#52789;&#51004;&#47196;-&#47784;&#45944;&#51012;-&#44396;&#49457;&#54616;&#44256;-IMDB-&#45936;&#51060;&#53552;&#50640;&#49436;-&#54984;&#47144;">&#182;</a></h3><ul>
+<li>케라스에서는 SimpleRNN외에 다른 순환 층도 있다. LSTM과 GRU 2개입니다.</li>
+<li>LSTM 층은 출력 차원만 지정하고 다른 (많은) 매개변수는 케라스의 기본값</li>
+<li>케라스는 좋은 기본값을 가지고 있어서 직접 매개변수를 튜닝하는 데 시간을 쓰지 않고도 거의 항상 어느정도 작동하는 모델 획득 가능</li>
+</ul>
 
 </div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">timesteps</span> <span class="o">=</span> <span class="mi">100</span>        <span class="c1"># 입력 시퀀스에 있는 타입스텝의 수</span>
-<span class="n">input_features</span> <span class="o">=</span> <span class="mi">32</span>    <span class="c1"># 입력 특성의 차원</span>
-<span class="n">output_features</span> <span class="o">=</span> <span class="mi">64</span>   <span class="c1"># 출력 특성의 차원</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">LSTM</span>
+<span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">imdb</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">SimpleRNN</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span>
+<span class="kn">from</span> <span class="nn">keras.preprocessing</span> <span class="kn">import</span> <span class="n">sequence</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 
      </div>
@@ -14332,12 +14302,24 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">inputs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="p">(</span><span class="n">timesteps</span><span class="p">,</span> <span class="n">input_features</span><span class="p">)</span>  <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span> <span class="n">inputs</span><span class="o">.</span><span class="n">shape</span> <span class="p">)</span>
-<span class="n">inputs</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+
+<span class="n">max_features</span> <span class="o">=</span> <span class="mi">10000</span>  <span class="c1"># 특성으로 사용할 단어의 수</span>
+<span class="n">maxlen</span> <span class="o">=</span> <span class="mi">500</span>  <span class="c1"># 사용할 텍스트의 길이(가장 빈번한 max_features 개의 단어만 사용합니다)</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">32</span>
+
+<span class="p">(</span><span class="n">input_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">input_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">num_words</span><span class="o">=</span><span class="n">max_features</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">input_train</span><span class="p">),</span> <span class="s1">&#39;훈련 시퀀스&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">input_test</span><span class="p">),</span> <span class="s1">&#39;테스트 시퀀스&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;시퀀스 패딩 (samples x time)&#39;</span><span class="p">)</span>
+<span class="n">input_train</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">input_train</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">maxlen</span><span class="p">)</span>
+<span class="n">input_test</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">input_test</span><span class="p">,</span> <span class="n">maxlen</span><span class="o">=</span><span class="n">maxlen</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;input_train 크기:&#39;</span><span class="p">,</span> <span class="n">input_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;input_test 크기:&#39;</span><span class="p">,</span> <span class="n">input_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14356,8 +14338,12 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(100, 32)
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>&lt;__array_function__ internals&gt;:5: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:159: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+  x_train, y_train = np.array(xs[:idx]), np.array(labels[:idx])
+c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:160: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
+  x_test, y_test = np.array(xs[idx:]), np.array(labels[idx:])
 </pre>
 </div>
 </div>
@@ -14365,148 +14351,16 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0.04660541, 0.16109852, 0.28930481, ..., 0.58336442, 0.98320904,
-        0.25654855],
-       [0.27512999, 0.46278217, 0.6902794 , ..., 0.1095859 , 0.37062854,
-        0.33986645],
-       [0.40936041, 0.08661058, 0.20617565, ..., 0.26904209, 0.65805157,
-        0.39939449],
-       ...,
-       [0.09060803, 0.93794775, 0.04682485, ..., 0.08070006, 0.7308984 ,
-        0.70537931],
-       [0.65547604, 0.11648888, 0.57752614, ..., 0.56265962, 0.38423102,
-        0.37779771],
-       [0.30472319, 0.56550675, 0.13771781, ..., 0.29715877, 0.90835744,
-        0.89162959]])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 초기상태 : 모두 0인 벡터</span>
-<span class="n">state_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">output_features</span><span class="p">,</span> <span class="p">))</span> 
-<span class="nb">print</span><span class="p">(</span> <span class="n">state_t</span><span class="o">.</span><span class="n">shape</span> <span class="p">)</span>
-<span class="n">state_t</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(64,)
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#47004;&#45924;&#54620;-&#44032;&#51473;&#52824;-&#54665;&#47148;">&#47004;&#45924;&#54620; &#44032;&#51473;&#52824; &#54665;&#47148;<a class="anchor-link" href="#&#47004;&#45924;&#54620;-&#44032;&#51473;&#52824;-&#54665;&#47148;">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">W</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="p">(</span><span class="n">output_features</span><span class="p">,</span> <span class="n">input_features</span> <span class="p">))</span> 
-<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="p">(</span><span class="n">output_features</span><span class="p">,</span> <span class="n">output_features</span> <span class="p">))</span> 
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="p">(</span><span class="n">output_features</span><span class="p">,</span>  <span class="p">))</span> 
-
-<span class="nb">print</span><span class="p">(</span><span class="n">W</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">U</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">W</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">U</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(64, 32) (64, 64) (64,)
-[0.63094667 0.5723013  0.81277864 0.04122926 0.14264744 0.70868253
- 0.04141886 0.08370889 0.67300665 0.882774   0.19456693 0.92237371
- 0.74105043 0.87864024 0.83264715 0.75150268 0.86428701 0.71381844
- 0.57606533 0.36161968 0.47746347 0.28258501 0.1500741  0.72156362
- 0.72938387 0.94381753 0.07889748 0.98200566 0.8065512  0.93703383
- 0.27975107 0.37509746]
-
-[0.91983942 0.54960007 0.37028701 0.73127441 0.34519301 0.17428552
- 0.88029849 0.02418245 0.34185041 0.98075607 0.1341119  0.89111246
- 0.5120043  0.14706754 0.61786284 0.40877601 0.80136436 0.23554382
- 0.76599093 0.73620383 0.60698166 0.20202944 0.9021647  0.41605377
- 0.85303496 0.89827042 0.43149938 0.038201   0.21021936 0.23103071
- 0.75828039 0.8948224  0.3709417  0.54689727 0.88407145 0.71921952
- 0.1227101  0.53025138 0.70389796 0.50343851 0.78847769 0.27000007
- 0.92797701 0.75404272 0.37027352 0.69946837 0.97544953 0.86608364
- 0.23732397 0.0946843  0.80752907 0.90355454 0.84685838 0.97336459
- 0.2044802  0.12075474 0.75180145 0.73890759 0.69511194 0.41082873
- 0.00241194 0.88755926 0.79954811 0.25813738]
-
-0.7843628623440486
-
+<pre>25000 훈련 시퀀스
+25000 테스트 시퀀스
+시퀀스 패딩 (samples x time)
+input_train 크기: (25000, 500)
+input_test 크기: (25000, 500)
+Wall time: 6.04 s
 </pre>
 </div>
 </div>
@@ -14518,24 +14372,39 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#50672;&#49549;&#46108;-&#44208;&#44284;">&#50672;&#49549;&#46108; &#44208;&#44284;<a class="anchor-link" href="#&#50672;&#49549;&#46108;-&#44208;&#44284;">&#182;</a></h3>
+<h3 id="LSTM&#44284;-GRU&#52789;-&#51060;&#54644;&#54616;&#44592;">LSTM&#44284; GRU&#52789; &#51060;&#54644;&#54616;&#44592;<a class="anchor-link" href="#LSTM&#44284;-GRU&#52789;-&#51060;&#54644;&#54616;&#44592;">&#182;</a></h3><ul>
+<li>simpleRNN은 이론적으로 시간 t에서 이전의 모든 타임스텝의 정보를 유지할 수 있다. </li>
+<li>실제로 긴 시간에 걸친 의존성은 학습할 수 없는 것이 문제.<ul>
+<li>층이 많은 일반 네트워크(피드포워드 네트워크)에서 나타나는 것과 비슷한 현상인 그래디언트 소실 문제(vanishing gradient problem)때문.</li>
+<li>1990년대 초 호크라이터(Hochreiter), 슈미트후버(Schmidhuber), 벤지오(Bengio)가 이런 현상에 대한 원인을 연구.<ul>
+<li>이 문제를 해결하기 위해 고안된 것은 LSTM과 GRU층이다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>이것은 SimpleRNN의 한 변종이다. 정보를 여러 타임스텝에 걸쳐 나르는 방법이 추가.</li>
+</ul>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># inputs = np.random.random( (timesteps, input_features)  )  100, 32</span>
-<span class="n">suc_outputs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">input_t</span> <span class="ow">in</span> <span class="n">inputs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">input_t</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">input_t</span><span class="p">)</span>
-    
-    <span class="n">output_t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">input_t</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">state_t</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-    <span class="n">suc_outputs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">output_t</span><span class="p">)</span>
-    <span class="n">state_t</span> <span class="o">=</span> <span class="n">output_t</span>
-    
-<span class="n">final_output_sequence</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">suc_outputs</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="n">max_features</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span>
+              <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span>
+              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
+                    <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14555,612 +14424,26 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(32,) [0.04660541 0.16109852 0.28930481 0.16242702 0.31633892 0.29631222
- 0.95739265 0.85484454 0.4415959  0.88484601 0.87786005 0.04999027
- 0.42070826 0.00918294 0.20883268 0.52596426 0.23704528 0.84735638
- 0.15218751 0.43480599 0.95428267 0.64678935 0.69298203 0.93802508
- 0.33443544 0.39047858 0.71057615 0.96397852 0.98382335 0.58336442
- 0.98320904 0.25654855]
-(32,) [0.27512999 0.46278217 0.6902794  0.07958218 0.94994303 0.40439182
- 0.18900538 0.45748679 0.15161163 0.5452121  0.04125446 0.67009511
- 0.114877   0.37984314 0.30438495 0.04102428 0.33170418 0.92329999
- 0.69299051 0.29948504 0.47342398 0.91489502 0.88470833 0.99308137
- 0.27833923 0.56469635 0.60692575 0.08389953 0.91590853 0.1095859
- 0.37062854 0.33986645]
-(32,) [0.40936041 0.08661058 0.20617565 0.50425154 0.92057885 0.40759262
- 0.502939   0.55633542 0.18894224 0.83448244 0.93138753 0.99733697
- 0.65877822 0.64521197 0.81027955 0.74437082 0.24063397 0.31651464
- 0.24987889 0.97513123 0.68885952 0.55604213 0.87718928 0.59976768
- 0.78954783 0.76374024 0.5525565  0.33566526 0.74769674 0.26904209
- 0.65805157 0.39939449]
-(32,) [0.29568192 0.36929736 0.41246029 0.8722331  0.30912243 0.75628997
- 0.5383898  0.94713323 0.07775211 0.65618063 0.39556554 0.54378945
- 0.42931743 0.10702712 0.68236968 0.87743604 0.46192406 0.3505639
- 0.21964522 0.1803287  0.83971566 0.39332568 0.68895403 0.63439416
- 0.7619631  0.48342469 0.87209437 0.30137283 0.83170678 0.06901297
- 0.84716474 0.98836802]
-(32,) [0.21212    0.20540444 0.38856327 0.48368523 0.46703037 0.71723775
- 0.2049208  0.9012397  0.69813581 0.93492939 0.56600492 0.37040047
- 0.51193217 0.10994828 0.89471798 0.36102837 0.27857498 0.43651099
- 0.35491911 0.07454768 0.55011469 0.10061973 0.70573696 0.49102783
- 0.16595136 0.35152807 0.39941315 0.37801848 0.9446266  0.79395459
- 0.83070558 0.77631323]
-(32,) [3.65642486e-01 9.56313185e-01 6.69178165e-01 2.22197465e-01
- 5.84377271e-01 2.42374312e-01 7.78585321e-04 1.17377072e-01
- 3.29195519e-01 4.32577576e-02 2.90350936e-01 4.88350444e-01
- 8.72241862e-01 8.51133500e-01 5.26508768e-01 6.54726186e-01
- 2.76637140e-01 5.59429462e-01 6.57068782e-01 3.78959052e-01
- 6.50527629e-01 8.88497692e-01 1.34095035e-01 8.98218291e-01
- 1.75667645e-01 5.79079687e-02 4.36826349e-02 3.80692440e-01
- 6.06268740e-01 8.68598025e-02 3.41667153e-01 6.46889335e-01]
-(32,) [0.07722325 0.36830948 0.4598299  0.5693703  0.66720005 0.33088986
- 0.54062812 0.43711987 0.3499282  0.12801328 0.30076199 0.08418165
- 0.69318706 0.05714387 0.03769819 0.10233745 0.93713768 0.65461744
- 0.66122256 0.1322149  0.77367976 0.30849697 0.89728563 0.48924766
- 0.93006129 0.39339747 0.27192086 0.38959054 0.72851495 0.54299451
- 0.12663022 0.05035913]
-(32,) [0.51222689 0.97573105 0.79658917 0.41369715 0.77516424 0.40002717
- 0.76433959 0.85425103 0.79596742 0.87131278 0.46049658 0.63273238
- 0.02700965 0.55778458 0.35440164 0.89657233 0.86719712 0.33160403
- 0.84002356 0.77809165 0.85680106 0.33837484 0.91225282 0.46256958
- 0.69565269 0.24299556 0.40886058 0.98793485 0.09123034 0.25135407
- 0.50139373 0.0410015 ]
-(32,) [0.0740953  0.2293943  0.8691662  0.58642138 0.70938932 0.83356665
- 0.74827121 0.87397787 0.34925251 0.28636765 0.79418604 0.79171886
- 0.4151429  0.75226034 0.46127389 0.8660335  0.48776101 0.53049656
- 0.03633621 0.71195631 0.01682026 0.40501777 0.91331396 0.03833961
- 0.9457596  0.35375007 0.66465382 0.22789242 0.8942871  0.30855798
- 0.34804101 0.15859724]
-(32,) [0.34231325 0.46896235 0.45970733 0.87681816 0.6913375  0.75947203
- 0.66628387 0.03406659 0.56177961 0.05313214 0.92507453 0.90898793
- 0.70773046 0.9991373  0.69239917 0.38074852 0.17545141 0.68168512
- 0.52967091 0.85330641 0.4799252  0.8124152  0.75804588 0.670822
- 0.23145089 0.83158024 0.22863551 0.20259434 0.48968943 0.67307224
- 0.74922514 0.18359355]
-(32,) [0.04382298 0.54833843 0.13849491 0.62314985 0.94450004 0.2078289
- 0.6303227  0.00350299 0.57332476 0.76486601 0.18078333 0.47013298
- 0.31882269 0.80441214 0.65648182 0.8001782  0.14816282 0.47030538
- 0.31414133 0.48982859 0.08456952 0.61070862 0.06442886 0.304502
- 0.03936613 0.99947935 0.38015274 0.40115824 0.17048892 0.56403696
- 0.87796785 0.53067126]
-(32,) [0.01008799 0.31829039 0.7740838  0.73921628 0.64642607 0.32050257
- 0.75567303 0.23364733 0.04676795 0.28342497 0.96485742 0.40746784
- 0.29417485 0.89094541 0.27199169 0.62479361 0.3109411  0.11490498
- 0.46524917 0.59017307 0.21112225 0.26144663 0.5410836  0.54443479
- 0.01426377 0.81820887 0.70361432 0.72422562 0.02210245 0.34157894
- 0.03218495 0.21243379]
-(32,) [0.547223   0.31984388 0.5413128  0.83467655 0.36460189 0.3596167
- 0.24706291 0.77423737 0.66521442 0.34324213 0.87248026 0.72804473
- 0.94980118 0.67461686 0.46809266 0.79591464 0.6830375  0.93950296
- 0.22650822 0.61906537 0.11769154 0.00964509 0.72409722 0.13938324
- 0.85504303 0.29504533 0.8517152  0.49685891 0.30756923 0.66340342
- 0.29751181 0.96134784]
-(32,) [0.54963246 0.53545362 0.98760899 0.31095839 0.24067274 0.13721061
- 0.50799141 0.67259354 0.77411692 0.59187014 0.09933148 0.61404669
- 0.233964   0.55274416 0.09042121 0.14477714 0.29755532 0.93383601
- 0.78629925 0.17957083 0.03421823 0.2752156  0.40756608 0.1207031
- 0.31703198 0.3050692  0.33507945 0.18855565 0.10118727 0.82675842
- 0.37195943 0.31777488]
-(32,) [0.96790282 0.74369744 0.17914369 0.3072624  0.95895459 0.2485915
- 0.38682964 0.16117277 0.26070804 0.85553709 0.66909739 0.8683695
- 0.74107538 0.5683072  0.31227489 0.78429104 0.05186491 0.07343545
- 0.82468496 0.73453901 0.93335495 0.89299671 0.63036643 0.15898176
- 0.97180955 0.66910339 0.96142716 0.38815018 0.1264975  0.85643225
- 0.34727455 0.22955179]
-(32,) [0.28085533 0.99467172 0.59255804 0.90339206 0.50181429 0.47778251
- 0.70623573 0.4698655  0.39707161 0.89797944 0.77936793 0.17908163
- 0.30197985 0.9558748  0.69653967 0.50726174 0.04245143 0.98911461
- 0.28822197 0.74959313 0.06176564 0.36563843 0.95572945 0.93379802
- 0.70241473 0.69813837 0.1499372  0.09769914 0.59349811 0.6208917
- 0.13365865 0.20795746]
-(32,) [0.65088396 0.37277564 0.19478905 0.71995127 0.83666403 0.66034152
- 0.35713964 0.49906576 0.24863292 0.00603118 0.99430144 0.16304537
- 0.82726435 0.6842938  0.98360981 0.41744453 0.54459647 0.64389767
- 0.44990134 0.7044104  0.02883938 0.03603807 0.7810403  0.60848243
- 0.56214286 0.35053046 0.78666291 0.51644801 0.02737036 0.66493701
- 0.52595893 0.44200888]
-(32,) [0.81230041 0.80402699 0.74380459 0.15909758 0.53408681 0.45043306
- 0.9494863  0.47966066 0.20839695 0.0443853  0.22622891 0.15007741
- 0.33955033 0.22781683 0.43960293 0.92660081 0.10941664 0.09887208
- 0.74838815 0.10288243 0.23848865 0.43969553 0.1792069  0.77869583
- 0.99922745 0.30383217 0.21868094 0.35220988 0.33002344 0.34577412
- 0.75517645 0.46604075]
-(32,) [0.12693078 0.41375022 0.81057262 0.28078978 0.51162796 0.41608858
- 0.20450318 0.55753368 0.64358096 0.73521449 0.77789492 0.82634788
- 0.03919672 0.03367441 0.57724115 0.12278873 0.39018447 0.0393746
- 0.79059573 0.91101629 0.4417489  0.86047291 0.32584556 0.38495351
- 0.28119297 0.46783634 0.09592841 0.45637712 0.84676634 0.13611502
- 0.17169211 0.46692366]
-(32,) [0.97920186 0.71674683 0.45999175 0.69386039 0.84505816 0.46906359
- 0.2076017  0.00520048 0.14138301 0.89055844 0.72266178 0.65451061
- 0.28517134 0.08478409 0.1388818  0.79761762 0.51461448 0.54852213
- 0.07572697 0.5409917  0.68803112 0.09276232 0.58306578 0.2573479
- 0.68114027 0.6893758  0.42038062 0.49738444 0.72385824 0.12621142
- 0.64275668 0.0517954 ]
-(32,) [0.46827674 0.25744294 0.59853345 0.77880192 0.75428902 0.08768637
- 0.98977022 0.52394355 0.23743438 0.55330945 0.92524346 0.83782926
- 0.48171231 0.42478923 0.02795539 0.75536532 0.40906468 0.74964501
- 0.70744183 0.44694696 0.66288704 0.36220162 0.87161761 0.5880466
- 0.08422924 0.78795381 0.0889161  0.00740049 0.67062678 0.43539619
- 0.93152079 0.02666495]
-(32,) [0.96947676 0.80385472 0.17922066 0.92000473 0.93488399 0.87166933
- 0.92668439 0.8943154  0.04981655 0.64036768 0.01900512 0.99745358
- 0.3988946  0.73984987 0.99285114 0.45892777 0.17287806 0.80771631
- 0.30783964 0.31990546 0.47230938 0.26643855 0.31717531 0.70848797
- 0.48209963 0.28557691 0.40275678 0.19542455 0.42035077 0.14326022
- 0.11853522 0.46176052]
-(32,) [0.98808098 0.94489006 0.25008745 0.69849423 0.32063091 0.35834514
- 0.96507633 0.57642814 0.47679127 0.7962768  0.32322416 0.36626707
- 0.62520783 0.32076796 0.26055738 0.60801862 0.66181138 0.64661834
- 0.23438239 0.92752966 0.87287611 0.51298372 0.53348926 0.29892177
- 0.71566135 0.85222673 0.49034745 0.64467407 0.39202965 0.23205006
- 0.64600871 0.71428322]
-(32,) [0.5855852  0.80894685 0.73181211 0.80791353 0.42231444 0.39765077
- 0.22638902 0.08556717 0.70233223 0.81733045 0.62922088 0.78819993
- 0.00787555 0.14823659 0.18794443 0.38231123 0.4479714  0.15717807
- 0.20834076 0.45859625 0.22732855 0.26015208 0.77364762 0.50025825
- 0.56915679 0.13322114 0.32616861 0.63026337 0.3951855  0.28594632
- 0.90316377 0.36708848]
-(32,) [0.92977578 0.60346617 0.11413642 0.70850363 0.25684481 0.52364254
- 0.80874139 0.5930605  0.70710916 0.78638454 0.71197628 0.96260308
- 0.06548135 0.7601525  0.56516692 0.25753396 0.19186053 0.92923327
- 0.90131832 0.53294697 0.41444626 0.98964812 0.12793823 0.70797688
- 0.61946015 0.88714065 0.95418434 0.72425595 0.64539257 0.26405187
- 0.70608996 0.61053075]
-(32,) [0.38953431 0.54379416 0.281859   0.59563928 0.75342985 0.32822917
- 0.12927119 0.90721323 0.81337283 0.48257704 0.15643618 0.5623927
- 0.86864633 0.01339686 0.41267523 0.89591024 0.40544164 0.83086053
- 0.39980414 0.36680765 0.83017066 0.70745184 0.60598517 0.79905305
- 0.51879837 0.65950042 0.16894111 0.640829   0.09657262 0.32308126
- 0.31433268 0.19778125]
-(32,) [0.24450566 0.60807474 0.05343623 0.84579917 0.92876186 0.92544566
- 0.24709248 0.92645644 0.55231564 0.38786457 0.04224035 0.43202383
- 0.52772967 0.37203785 0.06142665 0.83144398 0.95525275 0.19541631
- 0.93473273 0.02719006 0.37697259 0.06559588 0.35689175 0.90747414
- 0.58145518 0.16227678 0.39637308 0.59459594 0.09867088 0.30499669
- 0.41994754 0.17880731]
-(32,) [0.73617732 0.83470203 0.99466365 0.11520323 0.42608505 0.76747007
- 0.14845391 0.07199072 0.39915827 0.28166135 0.69513916 0.4431319
- 0.08781668 0.9299777  0.01551493 0.06315258 0.28926131 0.47065627
- 0.80778456 0.29463669 0.26899183 0.4978904  0.74257237 0.58303975
- 0.64623712 0.05622596 0.72294819 0.48137256 0.92065826 0.28526157
- 0.89507332 0.05414071]
-(32,) [0.93163352 0.86800678 0.98914834 0.41655005 0.31495689 0.52986905
- 0.25770463 0.70246992 0.97874769 0.71766831 0.55109091 0.31554625
- 0.89711434 0.37922423 0.84118865 0.62983281 0.52116701 0.46835723
- 0.38145624 0.39620149 0.33299894 0.31934233 0.11508548 0.81618588
- 0.8172899  0.97693853 0.93016637 0.97937006 0.69857627 0.26369566
- 0.45360848 0.55038273]
-(32,) [0.11737958 0.80947658 0.10801223 0.74074107 0.45460467 0.58710892
- 0.68533598 0.24312619 0.9080458  0.60694927 0.90001375 0.55701194
- 0.1503822  0.88302506 0.80306142 0.37856729 0.27332895 0.59508604
- 0.73588834 0.08763496 0.62326055 0.8105185  0.24439691 0.50217605
- 0.47129933 0.82408736 0.92409349 0.6071334  0.68775073 0.36027009
- 0.59894582 0.20091891]
-(32,) [0.81311779 0.61553027 0.78800977 0.50005687 0.16150067 0.01141275
- 0.1479672  0.69303906 0.36887155 0.28515642 0.99073042 0.58035759
- 0.30487485 0.31242171 0.33441954 0.52799645 0.55127194 0.96429617
- 0.53645116 0.77758981 0.76279824 0.85064327 0.41469292 0.26079258
- 0.42679964 0.34532702 0.1243933  0.43675964 0.97977585 0.0518891
- 0.54444853 0.28590399]
-(32,) [0.18953791 0.55414771 0.01370205 0.63583932 0.7996915  0.76230154
- 0.28881983 0.54764694 0.7052865  0.49071265 0.73917999 0.63886167
- 0.0153603  0.18738548 0.54792351 0.41972079 0.21705124 0.94300951
- 0.15431472 0.74908915 0.33037098 0.60777577 0.61789934 0.23341994
- 0.06857349 0.46541105 0.01419962 0.91027302 0.92756399 0.84871428
- 0.61583122 0.72877217]
-(32,) [0.58418422 0.83543076 0.36334771 0.0287447  0.08505212 0.65305789
- 0.83291227 0.11890763 0.55941003 0.6351259  0.77564113 0.04703078
- 0.37564109 0.13621151 0.7407546  0.59500846 0.05416696 0.86015764
- 0.83777076 0.09179201 0.16490748 0.77880271 0.67959068 0.50512612
- 0.36002071 0.13953881 0.35708757 0.34078318 0.39266207 0.61072441
- 0.19182459 0.94632306]
-(32,) [0.94843509 0.1196632  0.37407852 0.60149233 0.64974871 0.6504715
- 0.14156553 0.11983683 0.8871204  0.69559081 0.88000419 0.27328409
- 0.64947398 0.81940145 0.86708089 0.96397443 0.72364921 0.292003
- 0.89929811 0.40869218 0.83132324 0.24554612 0.95416527 0.05551779
- 0.38876204 0.68235042 0.88494357 0.24502317 0.00774116 0.39397278
- 0.32442129 0.30682633]
-(32,) [0.9198877  0.26314207 0.13245728 0.22044746 0.63315209 0.32960959
- 0.68669223 0.17943971 0.41894331 0.66182272 0.46571351 0.97862341
- 0.98766739 0.78972038 0.88383544 0.81776946 0.78278992 0.13410786
- 0.33573481 0.36245648 0.1627014  0.93696287 0.56982994 0.09697209
- 0.20485741 0.07035777 0.49971259 0.93741211 0.82911663 0.64348943
- 0.46165505 0.45177047]
-(32,) [0.9140127  0.76809684 0.76952041 0.60592926 0.02989372 0.87072299
- 0.15383619 0.69868743 0.18792808 0.04149971 0.84585778 0.51317197
- 0.72220539 0.69416136 0.20349135 0.44626856 0.46762485 0.19544948
- 0.18595495 0.30103926 0.65225434 0.41489609 0.45697138 0.42966715
- 0.25253893 0.85274087 0.48811981 0.15686413 0.19221855 0.05916487
- 0.07270693 0.57258762]
-(32,) [0.87068088 0.66539607 0.97354019 0.61643187 0.91244064 0.20648041
- 0.95945905 0.86518344 0.74153962 0.36662219 0.72833023 0.61910377
- 0.76278791 0.05761594 0.90926511 0.15973333 0.91544816 0.6487275
- 0.58725385 0.85027212 0.383089   0.91040818 0.88754377 0.55760445
- 0.13872416 0.77765905 0.17188935 0.29749205 0.87865763 0.2709298
- 0.37660651 0.98008444]
-(32,) [0.1160258  0.26848845 0.81608038 0.27527455 0.57593278 0.07106919
- 0.71445649 0.49664815 0.91884456 0.11736153 0.39214545 0.09884761
- 0.6842851  0.88767044 0.1539719  0.4522156  0.95787939 0.86236697
- 0.932441   0.53722703 0.24297046 0.63716527 0.91862876 0.12026531
- 0.12570463 0.9269823  0.96847279 0.31675412 0.82943732 0.09247458
- 0.71371254 0.34926843]
-(32,) [0.1070298  0.82064687 0.37452412 0.26399294 0.93731238 0.7826255
- 0.59925218 0.58221069 0.55525176 0.46637579 0.6095936  0.21788372
- 0.08865749 0.40467257 0.36576917 0.62981023 0.48010266 0.93385683
- 0.9791381  0.18132523 0.96462975 0.92578253 0.86675469 0.19244466
- 0.54202064 0.72496659 0.49209811 0.09411998 0.63045268 0.47530648
- 0.46671922 0.40577783]
-(32,) [0.4656345  0.45826839 0.19987455 0.87468715 0.59493812 0.34589584
- 0.1797623  0.47042305 0.24192967 0.16931656 0.7743524  0.63746808
- 0.01285112 0.03078687 0.98117955 0.18508752 0.15030599 0.16135388
- 0.41691915 0.02496646 0.17130331 0.79713932 0.68708042 0.58004428
- 0.95535169 0.59731374 0.783037   0.76195335 0.652383   0.49333976
- 0.03778348 0.04741671]
-(32,) [0.0144113  0.74364292 0.5759807  0.44811936 0.86084051 0.13710143
- 0.1349375  0.02293432 0.83939037 0.8039144  0.295003   0.17084039
- 0.61223174 0.90467286 0.33538962 0.97668171 0.07002989 0.40371586
- 0.82027824 0.57185566 0.1002175  0.56080096 0.35150848 0.12118545
- 0.57853128 0.65482476 0.59431573 0.02723351 0.51418519 0.27228976
- 0.27858403 0.9192218 ]
-(32,) [0.24627518 0.69255998 0.82162891 0.99529075 0.70450516 0.39657929
- 0.82090815 0.91627699 0.45267041 0.72197824 0.943485   0.07266782
- 0.95273973 0.81675598 0.31197054 0.65376575 0.84760369 0.17810084
- 0.15651012 0.49188818 0.40178397 0.80020619 0.36189305 0.33454125
- 0.02979379 0.46548324 0.19161368 0.35399887 0.4067323  0.34477789
- 0.90763766 0.30331427]
-(32,) [0.78409209 0.08192067 0.71188171 0.06599643 0.51826158 0.67291889
- 0.15488591 0.93361468 0.21560215 0.16128606 0.68057521 0.53745896
- 0.57419544 0.87962025 0.81907522 0.54407272 0.61584489 0.74537496
- 0.60463048 0.47394002 0.81068599 0.46753468 0.59743804 0.43967933
- 0.06657915 0.98627147 0.09422946 0.29427295 0.09507596 0.17452203
- 0.44497215 0.26243562]
-(32,) [0.51565496 0.21583707 0.47010501 0.63002681 0.88684331 0.70869596
- 0.26152263 0.25544854 0.49501074 0.15231722 0.23786451 0.50235955
- 0.03561132 0.04108065 0.12907477 0.38128081 0.00489225 0.21276684
- 0.65040455 0.76879367 0.0953089  0.22760577 0.06670273 0.18356343
- 0.60834647 0.59901512 0.00487534 0.05452648 0.97678252 0.61149437
- 0.65357868 0.74178742]
-(32,) [0.73777134 0.47519539 0.11236459 0.29955842 0.19440883 0.62932227
- 0.23382962 0.09620808 0.46018859 0.64481371 0.72987108 0.69166421
- 0.789127   0.39980189 0.0357894  0.33859644 0.91427282 0.3312003
- 0.09846619 0.8463574  0.95792722 0.90114231 0.80509089 0.54569555
- 0.8350384  0.51429521 0.05141166 0.37200295 0.01115398 0.92191811
- 0.31896373 0.42165211]
-(32,) [0.09048036 0.46210864 0.44913383 0.61384872 0.65587373 0.62920857
- 0.76258649 0.30409985 0.81164505 0.22451895 0.35500531 0.78584303
- 0.15092835 0.30080674 0.74612293 0.49167195 0.75817275 0.9985901
- 0.03524439 0.20138355 0.00341132 0.90248914 0.24098685 0.66708109
- 0.28553383 0.18383431 0.83345355 0.38305925 0.16841794 0.26877987
- 0.86423767 0.14184877]
-(32,) [4.17385855e-01 7.67759449e-01 5.74758424e-01 7.88355236e-01
- 6.53217992e-01 2.49476766e-01 5.47183758e-01 4.73853002e-01
- 9.99888802e-01 6.67272700e-01 1.79823958e-01 8.68801099e-01
- 4.77298419e-02 6.17028022e-01 4.66368565e-01 4.17997437e-01
- 9.64524212e-01 2.52010132e-01 8.21147882e-01 9.13382987e-01
- 7.40728486e-01 6.95118574e-01 6.94034087e-01 7.59733337e-01
- 9.55752313e-02 5.58023724e-01 3.74023153e-01 2.98858978e-01
- 3.05003667e-01 9.97831370e-01 2.99583835e-05 3.94065672e-01]
-(32,) [0.51531621 0.81425842 0.31439337 0.56385406 0.68213405 0.79724882
- 0.71674821 0.89214935 0.58540057 0.79886149 0.98077245 0.26898804
- 0.51315273 0.80396707 0.65152377 0.53567992 0.56832209 0.10005487
- 0.7584127  0.53759154 0.96519259 0.45935464 0.05573064 0.9367736
- 0.80339391 0.15189197 0.89392275 0.00900364 0.12469588 0.6164223
- 0.33762709 0.7243714 ]
-(32,) [0.63537523 0.96303174 0.40938054 0.28873651 0.46155536 0.2132178
- 0.95193849 0.72135231 0.65974375 0.46816537 0.8092667  0.18568592
- 0.53949297 0.23355092 0.53928533 0.94400777 0.01161868 0.58709868
- 0.02887443 0.62457535 0.13586682 0.32504844 0.56841857 0.30600167
- 0.77983247 0.87243917 0.11944418 0.92092488 0.46578251 0.46447824
- 0.77322283 0.95623917]
-(32,) [0.66215238 0.50920015 0.04507167 0.18729325 0.90640069 0.60639212
- 0.44060251 0.96996468 0.04948426 0.36826056 0.42297617 0.07982121
- 0.83767073 0.2196262  0.48931204 0.55960414 0.50347677 0.68210922
- 0.5037066  0.62896398 0.39808847 0.88351618 0.87030172 0.33585649
- 0.92726862 0.41319166 0.35828956 0.56033305 0.53047808 0.92612307
- 0.22309608 0.04336512]
-(32,) [0.52992272 0.64378934 0.04821668 0.92605665 0.0423301  0.61426402
- 0.02806499 0.44814163 0.81195197 0.40838187 0.40921146 0.53392819
- 0.77294328 0.11575849 0.78061249 0.26902975 0.42102316 0.83795346
- 0.37136984 0.40751539 0.9480407  0.52706355 0.68287711 0.38976447
- 0.28086571 0.77544243 0.3818288  0.42136891 0.88358314 0.37829515
- 0.52047936 0.36213549]
-(32,) [0.69735197 0.19727727 0.84091751 0.37196709 0.54403368 0.0013125
- 0.73026999 0.62350677 0.26189385 0.16056721 0.22207195 0.95691164
- 0.82613798 0.40991529 0.41796451 0.25909499 0.16262998 0.35261728
- 0.56347845 0.20691005 0.60318841 0.10054598 0.17454445 0.87735724
- 0.01968462 0.59455052 0.24506    0.93071873 0.83044271 0.98384285
- 0.70325367 0.28386307]
-(32,) [0.12412869 0.50793375 0.8376039  0.44856606 0.18446592 0.00749235
- 0.38604293 0.80997958 0.68189228 0.52031084 0.27106191 0.86468628
- 0.54147914 0.73729856 0.56892525 0.75578958 0.96191087 0.14051021
- 0.53495026 0.03494284 0.09001116 0.51570527 0.28641438 0.08615967
- 0.16505044 0.63309215 0.11726814 0.95439482 0.58933553 0.859911
- 0.69452321 0.22231111]
-(32,) [0.61711221 0.42596451 0.47601217 0.98463827 0.03286827 0.97914272
- 0.05116746 0.50493922 0.32460899 0.42730541 0.50704179 0.95905877
- 0.88850372 0.82313697 0.0944535  0.53860482 0.87046931 0.92933131
- 0.50507058 0.4948461  0.65141093 0.9787743  0.9268805  0.86419399
- 0.25540911 0.65626879 0.62567809 0.91066149 0.38141336 0.61345407
- 0.51607344 0.10045772]
-(32,) [0.05392063 0.3708922  0.52987126 0.2518211  0.39916577 0.78287861
- 0.43277393 0.85531976 0.10205045 0.59006296 0.74326934 0.27131335
- 0.9885532  0.49871607 0.94873517 0.77159158 0.39619183 0.63639518
- 0.35305691 0.54994345 0.77645718 0.65602858 0.16752927 0.59895751
- 0.10499773 0.86817362 0.85103888 0.01281387 0.61344102 0.49831986
- 0.38565334 0.65390632]
-(32,) [0.96729956 0.52373845 0.52206877 0.44133566 0.73495242 0.2807828
- 0.00412788 0.78806314 0.63378683 0.03840742 0.84410546 0.63300663
- 0.69461247 0.38666325 0.56617203 0.84999147 0.95621163 0.22741863
- 0.83902701 0.51390747 0.25760409 0.35352338 0.16215414 0.54997489
- 0.88600228 0.54102024 0.21497406 0.9885604  0.67902927 0.00868406
- 0.687674   0.45426841]
-(32,) [0.4337933  0.50325692 0.8745085  0.67562293 0.89958237 0.9965198
- 0.36017039 0.66344756 0.73472909 0.40839219 0.60511551 0.43152135
- 0.47466173 0.16920286 0.45936753 0.62168802 0.90705835 0.28637297
- 0.51789386 0.4324186  0.12943895 0.68644476 0.2162588  0.46768036
- 0.86912944 0.36020413 0.77524254 0.04784857 0.6998231  0.79368722
- 0.31160463 0.17824435]
-(32,) [0.01867684 0.96129456 0.84097649 0.41752151 0.78818453 0.45360518
- 0.79291826 0.6035739  0.81896681 0.60415417 0.58240878 0.80991458
- 0.99472846 0.55595891 0.10700697 0.74023469 0.68990397 0.39776052
- 0.97435405 0.90207946 0.38044936 0.78943436 0.67674235 0.18181024
- 0.36824515 0.52294962 0.29503679 0.81143076 0.94234904 0.41218344
- 0.76747849 0.45235753]
-(32,) [0.73525666 0.61228656 0.43186813 0.62623782 0.53143914 0.16971318
- 0.77959987 0.13314161 0.53849682 0.19223023 0.33355774 0.18022137
- 0.77929267 0.17733007 0.03170881 0.84047525 0.59110691 0.92924046
- 0.10175895 0.98888784 0.63327645 0.24321494 0.6108021  0.22063018
- 0.73687531 0.08249061 0.87948985 0.63630294 0.54393093 0.69607572
- 0.08457282 0.06788056]
-(32,) [0.41576143 0.23548165 0.73250943 0.77116249 0.06402213 0.14296295
- 0.27777641 0.98636154 0.84338774 0.21327512 0.9502307  0.26008518
- 0.76327105 0.33513376 0.10884512 0.94630001 0.11046032 0.60184873
- 0.25931436 0.6787612  0.89260958 0.0070946  0.25164838 0.01574993
- 0.22650102 0.78556536 0.09880138 0.70442684 0.48087071 0.47725088
- 0.41246291 0.47512977]
-(32,) [0.23615567 0.12102994 0.10605232 0.92265206 0.21974513 0.67469558
- 0.04329904 0.31634474 0.31251631 0.35242157 0.94740482 0.89889552
- 0.17045258 0.11074977 0.11868455 0.51143766 0.50803971 0.09107247
- 0.18252477 0.40460575 0.29321714 0.15803825 0.06713351 0.36885359
- 0.44562908 0.50879324 0.85389119 0.1012047  0.4096819  0.39220178
- 0.27799868 0.24106114]
-(32,) [0.0669656  0.8433591  0.58298802 0.83811964 0.1520814  0.46744218
- 0.98983654 0.82440445 0.7057321  0.67870749 0.49895672 0.54564885
- 0.34957344 0.06649307 0.4986689  0.90595421 0.53865181 0.60709632
- 0.84702372 0.91596023 0.42686372 0.70917337 0.50644832 0.72275616
- 0.56997162 0.69049998 0.21444798 0.23255023 0.62191531 0.68772514
- 0.56100782 0.0910693 ]
-(32,) [0.20924884 0.56828106 0.0737285  0.19598043 0.70949542 0.59656462
- 0.48624316 0.31863761 0.0759455  0.10009158 0.45478724 0.61439485
- 0.64774992 0.57938255 0.87793155 0.51366667 0.17073556 0.12300873
- 0.37637651 0.11048786 0.50582821 0.21837777 0.95421952 0.0588544
- 0.38875269 0.5212386  0.03075397 0.13269574 0.63571943 0.91553726
- 0.08104504 0.04284462]
-(32,) [0.73824797 0.02927302 0.92962217 0.26785762 0.49831792 0.84501698
- 0.33053784 0.44293755 0.90859857 0.77855516 0.21150376 0.77228796
- 0.18329663 0.27992366 0.11878006 0.88500855 0.34534035 0.77581906
- 0.63810113 0.52232426 0.74599081 0.13837228 0.85182572 0.20544532
- 0.9514458  0.80161917 0.17026662 0.87048029 0.63035927 0.01588656
- 0.42819981 0.77871224]
-(32,) [0.21481014 0.13660526 0.09310251 0.26149997 0.41433004 0.02950462
- 0.88574119 0.91067775 0.98211545 0.19439716 0.60745488 0.00248783
- 0.43538732 0.66907287 0.50918961 0.91082722 0.85796646 0.25647004
- 0.35021153 0.55209131 0.39169042 0.55241725 0.15953946 0.40594159
- 0.99192207 0.20043078 0.34816833 0.16689846 0.07910691 0.07001709
- 0.82258951 0.22278006]
-(32,) [0.21195441 0.10356521 0.11087879 0.69874771 0.02822179 0.84951827
- 0.0724156  0.38260167 0.79608624 0.92841022 0.90868701 0.09063721
- 0.85516371 0.01763113 0.28885524 0.67855085 0.28634544 0.60734157
- 0.56755995 0.54517126 0.94830073 0.45598345 0.29579833 0.55797271
- 0.73974096 0.68164389 0.40752561 0.69515029 0.7186861  0.49031062
- 0.43481432 0.39929916]
-(32,) [0.38565223 0.20817083 0.05189959 0.13676088 0.43808375 0.25506698
- 0.96958273 0.30119624 0.84435255 0.62311684 0.41357447 0.44242616
- 0.05712557 0.70921618 0.99897045 0.16110932 0.22692167 0.83066891
- 0.15055706 0.49791717 0.21916484 0.18894303 0.34504706 0.73728115
- 0.81018854 0.56211978 0.60779315 0.70619166 0.19492412 0.02647051
- 0.79467107 0.97849341]
-(32,) [0.1865711  0.46494877 0.46627251 0.65260203 0.61231067 0.23313802
- 0.97530356 0.99422118 0.73306767 0.94996671 0.32742522 0.3190651
- 0.52103219 0.9599682  0.96751126 0.74541231 0.55728837 0.12184712
- 0.91873817 0.87182166 0.60580331 0.31014251 0.66894394 0.26446526
- 0.24532336 0.74344693 0.68799334 0.49729121 0.29904232 0.97846553
- 0.9560607  0.69332959]
-(32,) [0.35817345 0.57193865 0.31643873 0.39241644 0.67170911 0.47657294
- 0.96785916 0.4706081  0.57294732 0.45005754 0.93225592 0.89388266
- 0.20154496 0.80995823 0.69396109 0.94530706 0.18496764 0.14545395
- 0.87030102 0.52991827 0.75144213 0.53678605 0.52322713 0.33574542
- 0.85926695 0.33536862 0.61674961 0.41875442 0.34788725 0.15216441
- 0.35033696 0.27171444]
-(32,) [0.21889676 0.39216602 0.86160023 0.99361639 0.52705557 0.2218556
- 0.45673739 0.92098193 0.16031137 0.44343973 0.11485701 0.01451863
- 0.72044206 0.28115241 0.14575505 0.31068546 0.76276971 0.44210063
- 0.32918577 0.20916472 0.10182149 0.86048575 0.46737972 0.46614971
- 0.12360659 0.0276227  0.25747621 0.28172223 0.82378376 0.54660522
- 0.75574704 0.42867127]
-(32,) [0.28821241 0.86429498 0.08765789 0.78669973 0.98892825 0.53723747
- 0.94400823 0.21500225 0.69005755 0.05933434 0.40164395 0.76602187
- 0.64434846 0.19937193 0.94122713 0.61373171 0.92349797 0.95193713
- 0.31750643 0.9051852  0.34212689 0.87654419 0.93516343 0.50010446
- 0.90834957 0.06120829 0.53604028 0.74919183 0.59683499 0.35401499
- 0.99751394 0.74404487]
-(32,) [0.21753164 0.15529734 0.32342716 0.24725604 0.81078622 0.81662018
- 0.34231104 0.69011996 0.85099283 0.31934908 0.49120976 0.43125102
- 0.27481169 0.20969419 0.39899105 0.00657581 0.17251766 0.74707554
- 0.00739707 0.84472161 0.80740654 0.5172752  0.47243298 0.3560565
- 0.79640111 0.12249392 0.20661688 0.92942563 0.85163842 0.80876081
- 0.62600271 0.6517493 ]
-(32,) [0.83538598 0.24378845 0.94122254 0.09188141 0.26407155 0.63758023
- 0.4596276  0.41581214 0.23689935 0.99937308 0.52930533 0.32654211
- 0.77726399 0.98002848 0.29578401 0.47706969 0.47610022 0.28572167
- 0.1932545  0.59778669 0.30761813 0.50833275 0.1741082  0.42656779
- 0.69591914 0.43903585 0.84733783 0.73210527 0.53231745 0.22604545
- 0.12121803 0.86928203]
-(32,) [0.63250943 0.76213916 0.57238545 0.00833345 0.59541202 0.70864097
- 0.77839433 0.55694866 0.49865358 0.31926999 0.87326859 0.5565596
- 0.22334876 0.51449144 0.13494033 0.0786497  0.52693212 0.80796689
- 0.14209241 0.07838808 0.77363302 0.23020837 0.39465991 0.27159621
- 0.0391401  0.08667959 0.20428411 0.52296415 0.15355303 0.99876501
- 0.84052244 0.400824  ]
-(32,) [0.97674576 0.55044387 0.67821188 0.65822399 0.71123611 0.12699099
- 0.78473092 0.28678219 0.53613886 0.67968908 0.36816972 0.23265761
- 0.55850822 0.87435298 0.68070805 0.00864815 0.82925189 0.57278939
- 0.25634215 0.90404294 0.65997284 0.49842743 0.95045151 0.57752789
- 0.41772322 0.59604585 0.74462505 0.60139835 0.25918838 0.74255705
- 0.7824258  0.44836549]
-(32,) [0.79311356 0.20618231 0.37325564 0.13100958 0.32591307 0.40677272
- 0.9062659  0.49030833 0.08531458 0.42733473 0.49388977 0.30732953
- 0.10081706 0.92964308 0.35426534 0.28750165 0.70962518 0.96587459
- 0.15307494 0.14548208 0.28366983 0.35766562 0.54101609 0.8078776
- 0.3510047  0.48146338 0.54135553 0.91799116 0.75405743 0.61259611
- 0.11993938 0.67224438]
-(32,) [0.88620236 0.37965454 0.98119415 0.95908067 0.54446294 0.76897346
- 0.15616941 0.98474222 0.55977573 0.93869102 0.67498155 0.42522169
- 0.03511984 0.95454763 0.58128895 0.73203143 0.52250135 0.37877851
- 0.04483384 0.20043567 0.64305314 0.32639563 0.63438866 0.12339952
- 0.50974859 0.19798384 0.01642473 0.86075456 0.88272367 0.03082735
- 0.07706356 0.89738093]
-(32,) [0.90708156 0.84152803 0.7373957  0.46311749 0.54994792 0.57327893
- 0.44831979 0.48314408 0.28485521 0.69548712 0.41986235 0.04215375
- 0.90134883 0.0381686  0.24060942 0.43848092 0.23126911 0.60541388
- 0.33099678 0.5164086  0.41197981 0.03985866 0.45238068 0.20742219
- 0.31444218 0.86303481 0.83530793 0.08129951 0.63110031 0.83401474
- 0.48350422 0.87111085]
-(32,) [0.47984348 0.65354526 0.9456383  0.41110962 0.24619378 0.05213485
- 0.02122095 0.45562729 0.20909818 0.47858398 0.14588027 0.34715433
- 0.35320756 0.19603823 0.87966756 0.91058281 0.76990208 0.65683847
- 0.50106423 0.1420701  0.20719353 0.75937259 0.70635955 0.64650311
- 0.03907458 0.52418086 0.44327492 0.37413683 0.58887388 0.50402823
- 0.47408399 0.58817221]
-(32,) [0.08933256 0.72544027 0.54131792 0.58301714 0.28290237 0.23543561
- 0.14214336 0.41969479 0.25582499 0.51876163 0.67495391 0.18051844
- 0.36572799 0.1237397  0.78981324 0.04491432 0.49533338 0.57487369
- 0.81449827 0.09417227 0.36991857 0.25869383 0.87835148 0.02673892
- 0.80455467 0.2243131  0.93081888 0.28781594 0.47932319 0.80575756
- 0.35319652 0.09020503]
-(32,) [0.14502983 0.59150144 0.33996938 0.92808747 0.4988549  0.79877342
- 0.14164344 0.08419334 0.41431226 0.94992822 0.66928941 0.06557072
- 0.40656578 0.39144674 0.80568619 0.03808771 0.04346234 0.02505214
- 0.17608836 0.99484128 0.97679054 0.39005752 0.70995428 0.85113522
- 0.26192925 0.59024736 0.64905685 0.46268462 0.66813865 0.06882128
- 0.72522774 0.02070409]
-(32,) [0.7001412  0.80303377 0.83908957 0.25443785 0.71650195 0.62382876
- 0.92315214 0.9307669  0.31376336 0.14324376 0.5994562  0.05588465
- 0.72634049 0.64976499 0.22277287 0.95250282 0.6456829  0.40026
- 0.42756486 0.14301593 0.48270262 0.50497943 0.15535241 0.21020135
- 0.49487758 0.64416788 0.34353016 0.97156861 0.64028412 0.66674293
- 0.61470095 0.02754537]
-(32,) [0.67715273 0.52153022 0.06003934 0.23062327 0.63914156 0.38692878
- 0.80995559 0.18876759 0.41376411 0.58289141 0.00508158 0.44548831
- 0.63439708 0.90122516 0.98353174 0.82925656 0.11167514 0.09961489
- 0.3098525  0.520329   0.43343951 0.61369058 0.52981926 0.09880385
- 0.64399758 0.10483769 0.45964194 0.19609882 0.48311545 0.04629875
- 0.22253618 0.59765068]
-(32,) [0.01618015 0.823167   0.15499283 0.03094554 0.69404142 0.84381534
- 0.95201222 0.9792526  0.07453393 0.49550366 0.25151981 0.94198921
- 0.52415102 0.96192456 0.90255788 0.21607796 0.98966308 0.30502809
- 0.93605611 0.07505342 0.82463685 0.08627887 0.77567236 0.47928973
- 0.69855998 0.6092272  0.11019615 0.05858224 0.53062343 0.27827661
- 0.23311062 0.58923025]
-(32,) [0.947761   0.94020922 0.13941585 0.9351249  0.29077234 0.37669221
- 0.01507511 0.10983234 0.99823676 0.22744639 0.38535287 0.32510768
- 0.88282467 0.40392814 0.66795242 0.71962347 0.93472319 0.36213896
- 0.3871193  0.60328613 0.8786388  0.47480881 0.30795888 0.11318683
- 0.6375894  0.93360885 0.43526519 0.57107432 0.32352325 0.06590707
- 0.44830651 0.64406179]
-(32,) [0.59346437 0.49580548 0.77634455 0.49080184 0.8315263  0.39776142
- 0.76966913 0.02600294 0.01200023 0.43872994 0.30584286 0.71866558
- 0.9779804  0.36024251 0.2486398  0.68140403 0.37455588 0.90790372
- 0.44526254 0.10339709 0.57803446 0.89381109 0.48154828 0.92808647
- 0.73378535 0.42563817 0.95897089 0.44901111 0.63203747 0.87750462
- 0.94338748 0.8540131 ]
-(32,) [0.52350344 0.41018952 0.97457335 0.13339055 0.8166774  0.60344023
- 0.21531568 0.24376873 0.32167522 0.54478027 0.35228965 0.00407118
- 0.24986298 0.69042191 0.04943255 0.16598903 0.5929928  0.3654118
- 0.23781572 0.55833104 0.24095383 0.62322168 0.71215977 0.39208474
- 0.6112959  0.13015077 0.13506086 0.9679006  0.68239099 0.14367886
- 0.07869383 0.00697943]
-(32,) [0.1551407  0.63582826 0.58878519 0.04778048 0.78639489 0.31012417
- 0.36941054 0.93655383 0.7197726  0.86730255 0.23298836 0.1427165
- 0.31577134 0.55244617 0.42383941 0.44388391 0.94078512 0.96753565
- 0.64215064 0.24887982 0.69174311 0.89137243 0.90400847 0.27616343
- 0.32684653 0.80761087 0.01376498 0.14186947 0.28238715 0.19522746
- 0.04967156 0.28540159]
-(32,) [0.32883245 0.05818393 0.83704391 0.43652554 0.77545913 0.04565703
- 0.04535304 0.7865114  0.28465466 0.55404504 0.92084874 0.95200664
- 0.77036138 0.59595245 0.09489677 0.85118883 0.2168309  0.91163944
- 0.73481899 0.91839899 0.43581051 0.80765066 0.01180139 0.90622739
- 0.9495666  0.93868309 0.43453703 0.92290896 0.20912149 0.3874056
- 0.82396987 0.11466974]
-(32,) [0.73132384 0.59251611 0.40162806 0.00441673 0.33511521 0.41066182
- 0.85877877 0.09722259 0.99656501 0.71110691 0.84882086 0.46864233
- 0.49771836 0.5020874  0.34577364 0.53998282 0.05815193 0.44676428
- 0.51677593 0.85759375 0.62179117 0.57066705 0.86813926 0.29350294
- 0.63918546 0.42259703 0.88085663 0.09003792 0.651242   0.14636417
- 0.48932501 0.56507961]
-(32,) [0.73388695 0.26000834 0.79742787 0.61079394 0.92952024 0.43075773
- 0.12994295 0.10120607 0.48015144 0.8677927  0.72871944 0.92050312
- 0.34461454 0.35810876 0.83872352 0.91949651 0.36926258 0.59043971
- 0.45613453 0.89020086 0.0404257  0.24033102 0.22211892 0.72625437
- 0.02583229 0.5680968  0.33676512 0.11770157 0.91850549 0.04263004
- 0.15910148 0.77788817]
-(32,) [0.10302204 0.8043043  0.01609455 0.9257392  0.66564262 0.97547073
- 0.28580215 0.45173113 0.4504032  0.78697962 0.32496701 0.41282885
- 0.65766495 0.77078852 0.05641287 0.97196498 0.11389452 0.26983861
- 0.50637115 0.68032564 0.58424479 0.56706835 0.91326969 0.71673894
- 0.44747031 0.70760567 0.34938986 0.46896779 0.19499661 0.70159683
- 0.56246881 0.12865856]
-(32,) [8.15309771e-03 8.06309130e-01 5.91888789e-01 9.76425274e-01
- 4.21968254e-01 4.88577963e-01 8.88872486e-01 8.87215694e-01
- 6.88578621e-01 5.49176225e-01 1.77294390e-01 5.62110045e-01
- 5.66070138e-02 3.78283894e-01 2.84200049e-01 3.92376228e-01
- 4.00411750e-01 5.50903628e-01 8.63265960e-01 6.06074457e-01
- 5.39411737e-01 9.70312222e-01 4.64407356e-01 2.40494673e-01
- 5.83784612e-01 6.61684334e-01 2.68190176e-01 5.76383280e-02
- 2.32061508e-04 6.70230903e-01 9.19149091e-01 4.82221378e-01]
-(32,) [0.81641191 0.08144226 0.56618293 0.89115368 0.77308946 0.98700951
- 0.09202952 0.84444119 0.07884024 0.49748629 0.82994048 0.41497851
- 0.00856573 0.53662564 0.60456026 0.12230776 0.67482411 0.93292544
- 0.81578796 0.32371442 0.30859322 0.59120277 0.69712383 0.18675918
- 0.72741162 0.84821813 0.24203044 0.0665632  0.21804704 0.29434812
- 0.5641097  0.29881628]
-(32,) [0.71404739 0.60915105 0.2930395  0.05902351 0.33479968 0.13352804
- 0.18744628 0.72813549 0.48884965 0.99577562 0.04458636 0.35468172
- 0.41112025 0.58689564 0.13124514 0.35161511 0.61213042 0.02426217
- 0.39302927 0.5943155  0.20675417 0.16176014 0.38564898 0.05682322
- 0.61597991 0.03712111 0.52231748 0.935963   0.78290281 0.68144081
- 0.25757581 0.63727358]
-(32,) [0.85672692 0.02389777 0.82368829 0.39279468 0.60498369 0.31101584
- 0.82595866 0.30073276 0.89446029 0.10871149 0.84384631 0.44930785
- 0.93595338 0.18094262 0.24256283 0.08171612 0.22569213 0.97780864
- 0.61031865 0.02122533 0.0391466  0.78075281 0.5441586  0.65105323
- 0.11364791 0.75431013 0.90917356 0.06818777 0.93131332 0.34908424
- 0.57736726 0.57101016]
-(32,) [0.61089805 0.87853859 0.69563917 0.89729479 0.20606917 0.59134147
- 0.94875359 0.89949048 0.8933009  0.73516035 0.14438718 0.49535085
- 0.03084024 0.12883341 0.75059477 0.28600175 0.73952621 0.00845319
- 0.80973679 0.53584112 0.43791555 0.66904702 0.6859146  0.49329513
- 0.43735597 0.07221156 0.75660875 0.98265538 0.89685675 0.21958168
- 0.09155922 0.62255626]
-(32,) [0.09060803 0.93794775 0.04682485 0.49878389 0.38188014 0.60676061
- 0.22872852 0.69602322 0.95838155 0.96248479 0.25910857 0.33807553
- 0.32896325 0.0752031  0.69966152 0.07657111 0.46494956 0.47836176
- 0.129572   0.75940604 0.13777291 0.81708504 0.12454516 0.03330418
- 0.53442665 0.36677338 0.50618    0.21883823 0.48634402 0.08070006
- 0.7308984  0.70537931]
-(32,) [0.65547604 0.11648888 0.57752614 0.73063644 0.50126176 0.39474711
- 0.14397873 0.27719597 0.00879964 0.53985439 0.74783351 0.82428562
- 0.9189385  0.88348032 0.48491882 0.17275346 0.23462047 0.64122484
- 0.91882787 0.96881973 0.13634913 0.99079781 0.55215913 0.80618995
- 0.66794326 0.11168438 0.79330396 0.56952433 0.63680091 0.56265962
- 0.38423102 0.37779771]
-(32,) [0.30472319 0.56550675 0.13771781 0.67297819 0.50136378 0.49337841
- 0.55200984 0.6423709  0.47968006 0.27481264 0.74599264 0.08634435
- 0.63792842 0.2709182  0.93472802 0.53918113 0.20890591 0.23649598
- 0.470158   0.4728858  0.87985292 0.91951489 0.28341147 0.25579157
- 0.01191097 0.40372948 0.76714547 0.11996353 0.4663869  0.29715877
- 0.90835744 0.89162959]
+<pre>Epoch 1/10
+157/157 [==============================] - 53s 322ms/step - loss: 0.6065 - acc: 0.6629 - val_loss: 0.4496 - val_acc: 0.7900
+Epoch 2/10
+157/157 [==============================] - 47s 299ms/step - loss: 0.3077 - acc: 0.8786 - val_loss: 0.3103 - val_acc: 0.8804
+Epoch 3/10
+157/157 [==============================] - 47s 301ms/step - loss: 0.2309 - acc: 0.9132 - val_loss: 0.3341 - val_acc: 0.8536
+Epoch 4/10
+157/157 [==============================] - 48s 304ms/step - loss: 0.1967 - acc: 0.9264 - val_loss: 0.4416 - val_acc: 0.8064
+Epoch 5/10
+157/157 [==============================] - 48s 306ms/step - loss: 0.1667 - acc: 0.9384 - val_loss: 0.3052 - val_acc: 0.8858
+Epoch 6/10
+157/157 [==============================] - 48s 303ms/step - loss: 0.1537 - acc: 0.9480 - val_loss: 0.3192 - val_acc: 0.8900
+Epoch 7/10
+157/157 [==============================] - 47s 301ms/step - loss: 0.1361 - acc: 0.9535 - val_loss: 0.3120 - val_acc: 0.8850
+Epoch 8/10
+157/157 [==============================] - 48s 306ms/step - loss: 0.1196 - acc: 0.9594 - val_loss: 0.3563 - val_acc: 0.8862
+Epoch 9/10
+157/157 [==============================] - 48s 304ms/step - loss: 0.1192 - acc: 0.9585 - val_loss: 0.3413 - val_acc: 0.8752
+Epoch 10/10
+157/157 [==============================] - 48s 304ms/step - loss: 0.1026 - acc: 0.9651 - val_loss: 0.4085 - val_acc: 0.8826
 </pre>
 </div>
 </div>
@@ -15169,13 +14452,37 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="&#44160;&#51613;&#51032;-&#49552;&#49892;&#44284;-&#51221;&#54869;&#46020;">&#44160;&#51613;&#51032; &#49552;&#49892;&#44284; &#51221;&#54869;&#46020;<a class="anchor-link" href="#&#44160;&#51613;&#51032;-&#49552;&#49892;&#44284;-&#51221;&#54869;&#46020;">&#182;</a></h4>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_output_sequence</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+<span class="n">val_acc</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
+<span class="n">loss</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">]</span>
+<span class="n">val_loss</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training loss&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_loss</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation loss&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation loss&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15191,56 +14498,31 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>(100, 64)</pre>
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
 </div>
 
 </div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_output_sequence</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">32</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([0.99999999, 0.99999982, 1.        , 0.99999999, 0.99999993,
-       0.99999981, 0.99999998, 0.99999994, 0.99999991, 0.99999994,
-       0.99999999, 0.99999999, 0.99999999, 0.99999999, 1.        ,
-       0.9999999 , 0.99999996, 1.        , 0.99999996, 0.99999998,
-       0.99999988, 0.99999996, 0.99999999, 0.9999993 , 0.99999993,
-       0.99999998, 1.        , 0.99999976, 0.99999996, 0.99999999,
-       1.        , 0.99999978])</pre>
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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MuvWrWPw4MG8/vrrAHz88ce0atWK5s2bM2TIEP7444/D5xs7diytW7emefPmrF69+s9BBfB7OGPrR2+MyeWWW2DZstAeMzkZpk4teH2NGjVo164d77//Pr169WLmzJn87W9/Q0SYOHEiNWrU4NChQ5x33nksX76cFi1a5HucJUuWMHPmTJYtW0ZWVhatW7emTZs2APTp04drr70WgHvuuYdnn32Wm266iZ49e3LRRRfRr1+/XMfav38/gwcP5uOPP+bUU0/lyiuv5Mknn+SWW24BoGbNmixdupQnnniCyZMnM3369ALfn9/DGVuJ3hgTFQKrbwKrbWbNmkXr1q1p1aoV6enpuapZ8vr000+55JJLqFy5Mscccww9e/Y8vG7FihV07NiR5s2bM2PGDNLT0wuNZ82aNTRs2JBTTz0VgKuuuoqFCxceXt+nTx8A2rRpc3ggtIIsWrSIK664Ash/OOPHH3+cHTt2UL58edq2bcvzzz/PuHHj+Pbbb6latWqhxw6GleiNMbkUVvIOp169ejFy5EiWLl3K3r17adOmDT/88AOTJ09m8eLFVK9encGDBxc4PHFRBg8ezFtvvUXLli154YUXWLBgQanizRnquDTDHI8ePZoePXrw3nvv0aFDB+bMmXN4OON3332XwYMHM2rUKK688spSxWolemNMVKhSpQrnnHMOQ4YMOVya37VrF0cffTTVqlXjl19+4f333y/0GJ06deKtt95i37597N69m7fffvvwut27d1O7dm0OHjx4eGhhgKpVq7J79+4/Hatx48ZkZGSwdu1aAP79739z9tlnl+i9+T2csZXojTFRY+DAgVxyySWHq3ByhvVt0qQJdevWpUOHDoXu37p1ay699FJatmzJ8ccfT9u2bQ+vmzBhAu3bt6dWrVq0b9/+cHIfMGAA1157LY8//vjhRliAxMREnn/+efr3709WVhZt27Zl2LBhJXpfOXPZtmjRgsqVK+caznj+/PmUK1eOZs2a0a1bN2bOnMmjjz5KhQoVqFKlSkgmKAlqmGIR6Qo8BiQA01X1oQK26wu8DrRV1TQRaYCblSqn6ftLVS30k7Jhio2JPBumuGwp7jDFRZboRSQBmAZcAGQCi0VktqquzLNdVeBm4Ks8h1inqslBvwNjjDEhFUwdfTtgraquV9UDwEygVz7bTQAeBkrWUhICK1bAnj1+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
+"
+>
 </div>
 
 </div>
@@ -15252,230 +14534,27 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="02-&#52992;&#46972;&#49828;&#47484;-&#54876;&#50857;&#54620;-RNN-&#44396;&#54788;">02 &#52992;&#46972;&#49828;&#47484; &#54876;&#50857;&#54620; RNN &#44396;&#54788;<a class="anchor-link" href="#02-&#52992;&#46972;&#49828;&#47484;-&#54876;&#50857;&#54620;-RNN-&#44396;&#54788;">&#182;</a></h3>
+<h3 id="&#44208;&#44284;-&#54869;&#51064;">&#44208;&#44284; &#54869;&#51064;<a class="anchor-link" href="#&#44208;&#44284;-&#54869;&#51064;">&#182;</a></h3><ul>
+<li>좀 더 높은 검증 정확도 달성.</li>
+<li>SimpleRNN 네트워크보다 더 낫다. LSTM이 그래디언트 소실 문제로부터 덜 영향을 받기 때문.</li>
+<li>그렇다고 반드시 LSTM이 모든 분야에 나은 것은 아니다. <ul>
+<li>LSTM이 더 높은 성능을 보이는 곳은 자연어 처리문제이다. <ul>
+<li>질문-응답(question-answering)과 기계 번역(machine translation)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>입력 ( batch_size, timesteps, input_features)<ul>
-<li>batch_size : 배치 사이즈</li>
-<li>timesteps : 시간 수준</li>
-<li>input_features : 입력 차원수 </li>
-</ul>
-</li>
+<li>(실습) 평가지표 (loss, AI 등)</li>
 </ul>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="SimpleRNN&#51032;-&#46160;&#44032;&#51648;-&#47784;&#46300;">SimpleRNN&#51032; &#46160;&#44032;&#51648; &#47784;&#46300;<a class="anchor-link" href="#SimpleRNN&#51032;-&#46160;&#44032;&#51648;-&#47784;&#46300;">&#182;</a></h3><ul>
-<li>(1) 각 타임스텝의 출력을 모은 전체 시퀀스를 반환 (batch_size, timesteps, output_feature) 3D텐서</li>
-<li><p>(2) 입력 시퀀스에 대한 마지막 출력만 반환(batch_size, output_features) 2D텐서</p>
-</li>
-<li><p>return_sequences의 매개변수로 선택이 가능.</p>
-</li>
-</ul>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="(2)-&#51077;&#47141;-&#49884;&#53248;&#49828;&#50640;-&#45824;&#54620;-&#47560;&#51648;&#47561;-&#52636;&#47141;&#47564;-&#48152;&#54872;">(2) &#51077;&#47141; &#49884;&#53248;&#49828;&#50640; &#45824;&#54620; &#47560;&#51648;&#47561; &#52636;&#47141;&#47564; &#48152;&#54872;<a class="anchor-link" href="#(2)-&#51077;&#47141;-&#49884;&#53248;&#49828;&#50640;-&#45824;&#54620;-&#47560;&#51648;&#47561;-&#52636;&#47141;&#47564;-&#48152;&#54872;">&#182;</a></h3><ul>
-<li>(batch_size, output_features) 2D텐서</li>
-</ul>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
-<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">SimpleRNN</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>  <span class="c1"># 시퀀스 길이 10000, 차원 32로 </span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>  <span class="c1">#  return_sequences는 기본값이 False</span>
-<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Model: &#34;sequential_2&#34;
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_2 (Embedding)      (None, None, 32)          320000    
-_________________________________________________________________
-simple_rnn_2 (SimpleRNN)     (None, 32)                2080      
-=================================================================
-Total params: 322,080
-Trainable params: 322,080
-Non-trainable params: 0
-_________________________________________________________________
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="(1)-&#52636;&#47141;&#51012;-&#47784;&#51008;-&#51204;&#52404;-&#49884;&#53248;&#49828;-&#48152;&#54872;">(1) &#52636;&#47141;&#51012; &#47784;&#51008; &#51204;&#52404; &#49884;&#53248;&#49828; &#48152;&#54872;<a class="anchor-link" href="#(1)-&#52636;&#47141;&#51012;-&#47784;&#51008;-&#51204;&#52404;-&#49884;&#53248;&#49828;-&#48152;&#54872;">&#182;</a></h3><ul>
-<li>(batch_size, timesteps, output_feature) 3D텐서</li>
-</ul>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Model: &#34;sequential_3&#34;
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_3 (Embedding)      (None, None, 32)          320000    
-_________________________________________________________________
-simple_rnn_3 (SimpleRNN)     (None, None, 32)          2080      
-=================================================================
-Total params: 322,080
-Trainable params: 322,080
-Non-trainable params: 0
-_________________________________________________________________
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#50668;&#47084;&#44060;&#51032;-&#49692;&#54872;-&#52789;&#51012;-&#52264;&#47168;&#45824;&#47196;-&#49939;&#50500;&#48372;&#44592;">&#50668;&#47084;&#44060;&#51032; &#49692;&#54872; &#52789;&#51012; &#52264;&#47168;&#45824;&#47196; &#49939;&#50500;&#48372;&#44592;<a class="anchor-link" href="#&#50668;&#47084;&#44060;&#51032;-&#49692;&#54872;-&#52789;&#51012;-&#52264;&#47168;&#45824;&#47196;-&#49939;&#50500;&#48372;&#44592;">&#182;</a></h3><ul>
-<li>이런 설정에서는 중간 층들이 전체 출력 시퀀스를 반환하도록 설정해야 한다.</li>
-</ul>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">32</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>  <span class="c1"># 맨 위 층만 마지막 출력을 반환합니다.</span>
-<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Model: &#34;sequential_2&#34;
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_2 (Embedding)      (None, None, 32)          320000    
-_________________________________________________________________
-simple_rnn_2 (SimpleRNN)     (None, None, 32)          2080      
-_________________________________________________________________
-simple_rnn_3 (SimpleRNN)     (None, None, 32)          2080      
-_________________________________________________________________
-simple_rnn_4 (SimpleRNN)     (None, None, 32)          2080      
-_________________________________________________________________
-simple_rnn_5 (SimpleRNN)     (None, 32)                2080      
-=================================================================
-Total params: 328,320
-Trainable params: 328,320
-Non-trainable params: 0
-_________________________________________________________________
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 

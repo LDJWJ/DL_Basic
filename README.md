@@ -66,6 +66,7 @@
 ### 딥러닝 RNN
  * RNN(numpy 구현) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.pdf)
  * RNN(IMDB 긍정부정) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.pdf)
+ * RNN(LSTM) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_02_RNN_LSTM.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_02_RNN_LSTM.pdf)
  
 ### 딥러닝 GAN
  * GAN - 적대적 생성 신경망
