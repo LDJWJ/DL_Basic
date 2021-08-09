@@ -82,4 +82,9 @@
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
  * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
 
+
+### 참고 site
+ * [Neural Network Playground](https://playground.tensorflow.org/) - https://playground.tensorflow.org/
+
+
 * 내용중의 일부는 케라스 창시자에게 배우는 딥러닝을 참조하였습니다.
