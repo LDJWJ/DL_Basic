@@ -43,7 +43,8 @@
  * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.pdf)
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
  * CNN Conv3 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.pdf)
-
+ * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
+ 
 ### Cat vs Dog Dataset
  * CNN (1) - 기본모델 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab.pdf)
  * CNN (2) - 이미지제너레이터 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab.pdf)
@@ -53,11 +54,8 @@
 ### Tensorflow 2.x 실습
  * MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.pdf)
  * fashion MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.pdf)
- * Dogs vs Cats  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
+ * fashion MNIST 모델 성능 개선 [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.pdf)
  * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.pdf)
-
-### 모델 성능 개선
- * 모델 성능 개선 [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.pdf)
 
 ### 딥러닝 자연어
  * 텍스트 데이터 처리(1)[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
