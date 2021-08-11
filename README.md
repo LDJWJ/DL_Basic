@@ -10,14 +10,15 @@
  * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01_DL_BASIC_ENV_MAKE.pdf)
  * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
  * 딥러닝 입문 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01B_DLML_딥러닝기초.pdf)
- * 딥러닝 알고리즘  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_알고리즘_v11_2108.pdf)
+ * 딥러닝 기본 알고리즘  [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_알고리즘_v11_2108.pdf) 
  * 딥러닝 알고리즘 - 활성화함수  [pdf](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_00_NeuralNet_wColab.pdf)
- * CNN 입문  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN_v02_2108.pdf)
- * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL02_tf2.0소개_2002_v02.pdf)
+ * CNN 시작하기  [시작하기_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
+ [기본_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
+ * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
- * 모델 개선  [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
- * RNN 기본 입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
- * GAN 기본 입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/part04_DL04_기본_GAN_202012_v04_.pdf)
+ * 모델 개선 [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
+ * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
+ * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/part04_DL04_기본_GAN_202012_v04_.pdf)
  
 ### SourceCode 
 ### 딥러닝 시작하기
