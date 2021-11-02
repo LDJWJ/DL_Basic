@@ -9,7 +9,8 @@
 #### PDF
  * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝기본환경만들기_tf26.pdf)
  * 딥러닝 시작하기 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝입문_v10_2111.pdf)
- * 딥러닝 기본 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2108.pdf) 
+ * 딥러닝 기본용어 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본기본용어_v10_2004.pdf) 
+ * 딥러닝 기본 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2111.pdf) 
  * CNN 시작하기  [시작하기_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
  [기본_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
  [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
