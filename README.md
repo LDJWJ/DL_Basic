@@ -7,17 +7,16 @@
  
 ### 딥러닝 기본 및 실습
 #### PDF
- * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01_DL_BASIC_ENV_MAKE.pdf)
- * 머신러닝 리뷰 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/01A_DLML_Review_v121_2001_pdfver.pdf)
+ * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝기본환경만들기_tf26.pdf)
  * 딥러닝 시작하기 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝입문_v10_2111.pdf)
  * 딥러닝 기본 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2108.pdf) 
  * CNN 시작하기  [시작하기_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
  [기본_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
- * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_tf2.0소개_2002_v02.pdf)
+ [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
+ * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
- * 모델 개선 [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_CNN_ModelUp_202012_v01.pdf)
- * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN_이론_202012_v10.pdf)
- * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/part04_DL04_기본_GAN_202012_v04_.pdf)
+ * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_20_03_v10.pdf)
+ * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202012_v04_.pdf)
  
 ### SourceCode 
 ### 딥러닝 시작하기
@@ -27,10 +26,10 @@
  * Titanic [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html)   [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
  
 ### MNIST 이미지 데이터 셋
- * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.pdf)
- * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist02_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist02_up.pdf)
- * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_05_DL_mnist03_up.pdf)
- * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch02_06_DL_mnist04_EarlyStop.pdf)
+ * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.pdf)
+ * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.pdf)
+ * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.pdf)
+ * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.pdf)
  
 ### 영화 리뷰 긍정/부정 분류, 뉴스 기사 분류
  * 영화 리뷰 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.pdf)
