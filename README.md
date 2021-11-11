@@ -16,7 +16,7 @@
  [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
  * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
- * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_20_03_v10.pdf)
+ * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_2111_v02.pdf)
  * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202012_v04_.pdf)
  
 ### SourceCode 
@@ -58,7 +58,7 @@
 
 ### 딥러닝 자연어
  * 텍스트 데이터 처리(1)[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
- * 텍스트 데이터 처리(1) [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.pdf)
+ * 텍스트 데이터 처리(2) - WordEmbedding(단어 임베딩) [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.pdf)
  * 텍스트 데이터 처리(3)-사전훈련모델[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.pdf)
  
 ### 딥러닝 RNN

@@ -14259,13 +14259,28 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="&#45800;&#50612;-&#51076;&#48288;&#46377;-&#49324;&#50857;&#54616;&#44592;">&#45800;&#50612; &#51076;&#48288;&#46377; &#49324;&#50857;&#54616;&#44592;<a class="anchor-link" href="#&#45800;&#50612;-&#51076;&#48288;&#46377;-&#49324;&#50857;&#54616;&#44592;">&#182;</a></h2>
+<h3 id="&#45800;&#50612;-&#51076;&#48288;&#46377;(word-embedding)-&#51060;&#54644;&#54616;&#44592;">&#45800;&#50612; &#51076;&#48288;&#46377;(word embedding) &#51060;&#54644;&#54616;&#44592;<a class="anchor-link" href="#&#45800;&#50612;-&#51076;&#48288;&#46377;(word-embedding)-&#51060;&#54644;&#54616;&#44592;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#54617;&#49845;-&#45236;&#50857;">&#54617;&#49845; &#45236;&#50857;<a class="anchor-link" href="#&#54617;&#49845;-&#45236;&#50857;">&#182;</a></h3><ul>
+<li>단어 임베딩 기본 개념 이해</li>
+<li>IMDB 영화 리뷰 데이터 셋을 활용하여 단어 임베딩 실습해 보기</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#45800;&#50612;-&#51076;&#48288;&#46377;-&#51060;&#54644;&#54616;&#44592;">&#45800;&#50612; &#51076;&#48288;&#46377; &#51060;&#54644;&#54616;&#44592;<a class="anchor-link" href="#&#45800;&#50612;-&#51076;&#48288;&#46377;-&#51060;&#54644;&#54616;&#44592;">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>단어와 벡터를 연관짓는 강력하고 인기 있는 또 다른 방법 중의 하나는 단어 임베딩이라는 밀집 단어 벡터를 사용하는 것.</li>
+<li>단어와 벡터를 연관짓는 강력하고 인기 있는 또 다른 방법 중의 하나는 단어 임베딩이다.</li>
+<li>단어 임베딩은 밀집 단어 벡터를 사용하는 것.</li>
 <li>단어 임베딩은 언어를 기하학적 공간에 매핑하는 것.</li>
 <li>잘 구축된 임베딩 공간에서는 동의어가 비슷한 단어 벡터로 임베딩된다.</li>
 </ul>
@@ -14280,18 +14295,19 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><p>고차원 저차원</p>
+<li><p>A. 고차원 저차원</p>
 <ul>
-<li>원핫 인코딩 기법으로 만든 벡터는 <strong>대부분 0으로 채워지는 고차원</strong>이다.</li>
-<li><p>단어 임베딩은 <strong>저차원 기법</strong>이다.</p>
+<li>원핫 인코딩 기법으로 만든 벡터는 대부분 0으로 채워지는 고차원이다.</li>
+<li><p>단어 임베딩은 저차원 기법이다.</p>
 </li>
 <li><p>원핫인코딩은 단어 사전이 2만개의 토큰으로 이루어져 있다면 20,000차원의 벡터를 사용</p>
 </li>
-<li>보통 단어 임베딩은 256, 512, 1024차원의 단어 임베딩을 사용.</li>
+<li>보통 단어 임베딩은 <strong>256, 512, 1024차원의 단어 임베딩</strong>을 사용.</li>
 </ul>
 </li>
-<li>A. 원-핫 인코딩이나 해싱으로 얻은 단어 표현은 희소하고 고차원이며, 수동으로 인코딩된다.</li>
-<li>B. 단어 임베딩은 조밀하고 비교적 저차원이며 데이터로부터 학습</li>
+<li><p>B. 원-핫 인코딩이나 해싱으로 얻은 단어 표현은 희소하고 고차원이며, 수동으로 인코딩된다.</p>
+</li>
+<li>C. 단어 임베딩은 조밀하고 <strong>비교적 저차원이며 데이터로부터 학습</strong></li>
 </ul>
 
 </div>
@@ -14304,8 +14320,8 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>신경망을 학습하는 방법처럼 단어 벡터를 학습하기</li>
-<li>사전에 훈련된 단어 임베딩을 로드하기(pretrained word embedding)<ul>
+<li>신경망을 학습하는 방법처럼 <strong>단어 벡터를 학습</strong>하기</li>
+<li><strong>사전에 훈련</strong>된 단어 임베딩을 로드하기(pretrained word embedding)<ul>
 <li>구글의 토마스 미코로프 word2vec 알고리즘(<a href="https://code.google.com/archive/p/word2vec">https://code.google.com/archive/p/word2vec</a>)</li>
 <li>스탠포드 대학교 : GloVe(<a href="https://nlp.stanford.edu/projects/glove">https://nlp.stanford.edu/projects/glove</a>)</li>
 </ul>
@@ -14322,10 +14338,10 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>단어와 밀집 벡터를 연관 짓는 가장 간단한 방법은 랜덤하게 벡터를 선택하는 것.</li>
+<li>단어와 밀집 벡터를 연관 짓는 가장 간단한 방법은 <strong>랜덤하게 벡터를 선택</strong>하는 것.</li>
 <li>이 방식의 문제점은 임베딩 공간이 구조적이지 않다는 것.<ul>
 <li>예를 들어, accurate와 exact단어는 대부분 문장에서 비슷한 의미로 사용. 단, 다른 임베딩을 갖는다.</li>
-<li>심층 신경망이 이런 임의의 구조적이지 않은 임베딩 공간을 이해하기는 어렵다.    </li>
+<li>심층 신경망이 이런 임의의 구조적이지 않은 임베딩 공간을 이해하기는 어렵다.</li>
 </ul>
 </li>
 </ul>
@@ -14334,16 +14350,16 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#44536;&#47084;&#47732;-&#50612;&#46523;&#44172;-&#54644;&#50556;-&#54624;&#44620;?">&#44536;&#47084;&#47732; &#50612;&#46523;&#44172; &#54644;&#50556; &#54624;&#44620;?<a class="anchor-link" href="#&#44536;&#47084;&#47732;-&#50612;&#46523;&#44172;-&#54644;&#50556;-&#54624;&#44620;?">&#182;</a></h3>
+<h3 id="04.-&#54644;&#44208;-&#51228;&#50504;">04. &#54644;&#44208; &#51228;&#50504;<a class="anchor-link" href="#04.-&#54644;&#44208;-&#51228;&#50504;">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>단어 벡터 사이에 좀 더 추상적이고 기하학적인 관계를 얻으려면 단어 사이에 있는 의미 관계를 반영해야함.<ul>
-<li>단어 임베딩은 언어를 기하학적 공간에 매핑하는 것.</li>
+<li><strong>단어 임베딩</strong>은 언어를 <strong>기하학적 공간에 매핑</strong>하는 것.</li>
 <li>예를 들어 잘 구축된 임베딩 공간에서는 동의어가 비슷한 단어 벡터로 임베딩된다.</li>
-<li>일반적으로 두 단어 벡터 사이의 거리(L2 거리)는 이 단어 사이의 의미 거리와 관계되어 있다.<ul>
+<li>일반적으로 <strong>두 단어 벡터 사이의 거리(L2 거리)</strong>는 이 <strong>단어 사이의 의미 거리와 관계</strong>되어 있다.<ul>
 <li>멀리 떨어진 위치에 임베딩된 단어 의미는 서로 다른 반면</li>
 <li>비슷한 단어들은 가까이 임베딩된다.</li>
 </ul>
@@ -14356,7 +14372,15 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#47928;&#51228;&#45716; &#49324;&#46988;&#51032; &#50616;&#50612;&#47484; &#50756;&#51204;&#55176; &#47588;&#54609;&#49884;&#53420; &#49688; &#51080;&#45716; &#51060;&#49345;&#51201;&#51064; &#45800;&#50612; &#51076;&#48288;&#46377; &#44277;&#44036;&#51012; &#47564;&#46300;&#45716; &#44163;&#51060;&#45796;. &#51060;&#47088; &#44277;&#44036;&#51060; &#51080;&#51012;&#44620;?<a class="anchor-link" href="#&#47928;&#51228;&#45716;-&#49324;&#46988;&#51032;-&#50616;&#50612;&#47484;-&#50756;&#51204;&#55176;-&#47588;&#54609;&#49884;&#53420;-&#49688;-&#51080;&#45716;-&#51060;&#49345;&#51201;&#51064;-&#45800;&#50612;-&#51076;&#48288;&#46377;-&#44277;&#44036;&#51012;-&#47564;&#46300;&#45716;-&#44163;&#51060;&#45796;.-&#51060;&#47088;-&#44277;&#44036;&#51060;-&#51080;&#51012;&#44620;?">&#182;</a></h3><ul>
+<ul>
+<li>문제는 <strong>사람의 언어를 완전히 매핑</strong>시킬 수 있는 <strong>이상적인 단어 임베딩 공간</strong>을 만드는 것이다. 이런 공간이 있을까?</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
 <li>아마도 가능하겠지만, 완벽하게는 어려울 수 있다.</li>
 <li>다만, 최근에는 많은 발전을 이루었다.</li>
 </ul>
@@ -14365,21 +14389,21 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#52992;&#46972;&#49828;&#47484;-&#51060;&#50857;&#54616;&#50668;-&#51060;&#47484;-&#44396;&#54788;&#54644;-&#48372;&#51088;">&#52992;&#46972;&#49828;&#47484; &#51060;&#50857;&#54616;&#50668; &#51060;&#47484; &#44396;&#54788;&#54644; &#48372;&#51088;<a class="anchor-link" href="#&#52992;&#46972;&#49828;&#47484;-&#51060;&#50857;&#54616;&#50668;-&#51060;&#47484;-&#44396;&#54788;&#54644;-&#48372;&#51088;">&#182;</a></h3>
+<h3 id="05-&#52992;&#46972;&#49828;-&#49892;&#49845;---IMDB-&#45936;&#51060;&#53552;&#47484;-&#51060;&#50857;&#54620;-Embedding-&#49892;&#49845;">05 &#52992;&#46972;&#49828; &#49892;&#49845; - IMDB &#45936;&#51060;&#53552;&#47484; &#51060;&#50857;&#54620; Embedding &#49892;&#49845;<a class="anchor-link" href="#05-&#52992;&#46972;&#49828;-&#49892;&#49845;---IMDB-&#45936;&#51060;&#53552;&#47484;-&#51060;&#50857;&#54620;-Embedding-&#49892;&#49845;">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Embedding 층(특정 단어를 나타내는) 정수 인덱스를 밀집 벡터로 매핑하는 딕셔너리로 이해</li>
-<li>정수를 입력받아, 내부 딕셔너리에서 이 정수와 연관된 벡터를 찾아 반환</li>
+<li>정수를 입력받아, 내부 딕셔너리에서 <strong>이 정수와 연관된 벡터를 찾아 반환</strong></li>
 </ul>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Embedding</span>
@@ -14388,6 +14412,8 @@ a.anchor-link {
 <span class="c1"># 가능한 토큰의 개수(여기서는 1,000으로 단어 인덱스 최댓값 + 1입니다)와 </span>
 <span class="c1"># 임베딩 차원(여기서는 64)입니다</span>
 <span class="n">embedding_layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="nb">type</span><span class="p">(</span><span class="n">embedding_layer</span><span class="p">),</span> <span class="n">embedding_layer</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14395,19 +14421,50 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;keras.layers.embeddings.Embedding&#39;&gt; &lt;keras.layers.embeddings.Embedding object at 0x7fdc68f6e550&gt;
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Embedding&#52789;&#51032;-&#51077;&#47141;">Embedding&#52789;&#51032; &#51077;&#47141;<a class="anchor-link" href="#Embedding&#52789;&#51032;-&#51077;&#47141;">&#182;</a></h3><ul>
-<li>(samples, sequence_length) <ul>
+<li>(samples, sequence_length)<ul>
 <li>samples : 샘플수</li>
 <li>sequence_length : 시퀀스 길이 ( 단순히 길이)</li>
 <li>정수 텐서를 입력으로 받음. 2D텐서</li>
 </ul>
 </li>
-<li>여기서 sequence_length가 작은 길이의 시퀀스는 0으로 패딩되고, 긴 시퀀스는 잘리게 됩니다.</li>
+<li>여기서 sequence_length가 작은 길이의 시퀀스는 <strong>0으로 패딩</strong>되고, <strong>긴 시퀀스는 잘리게</strong> 됩니다.</li>
 </ul>
-<h3 id="Embedding&#52789;&#51032;-&#52636;&#47141;">Embedding&#52789;&#51032; &#52636;&#47141;<a class="anchor-link" href="#Embedding&#52789;&#51032;-&#52636;&#47141;">&#182;</a></h3><ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Embedding&#52789;&#51032;-&#52636;&#47141;">Embedding&#52789;&#51032; &#52636;&#47141;<a class="anchor-link" href="#Embedding&#52789;&#51032;-&#52636;&#47141;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
 <li>(samples, sqeuence_length, embedding_dimensionality)<ul>
 <li>samples : 샘플수</li>
 <li>sequence_length : 시퀀스 길이</li>
@@ -14416,10 +14473,20 @@ a.anchor-link {
 </ul>
 </li>
 </ul>
-<h3 id="Embedding-&#52789;&#51032;-&#44061;&#52404;">Embedding &#52789;&#51032; &#44061;&#52404;<a class="anchor-link" href="#Embedding-&#52789;&#51032;-&#44061;&#52404;">&#182;</a></h3><ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Embedding&#52789;&#51032;-&#44061;&#52404;">Embedding&#52789;&#51032; &#44061;&#52404;<a class="anchor-link" href="#Embedding&#52789;&#51032;-&#44061;&#52404;">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
 <li>가중치는 다른 층과 마찬가지로 랜덤하게 초기화</li>
-<li>신경망의 학습을 통해 점차 조정되어진다. <ul>
-<li>훈련이 끝나면 임베딩 공간은 특정 문제에 특화된 구조를 많이 갖는다.</li>
+<li><strong>신경망의 학습을 통해 점차 조정</strong>되어진다.<ul>
+<li>훈련이 끝나면 임베딩 공간은 <strong>특정 문제에 특화된 구조</strong>를 많이 갖는다.</li>
 </ul>
 </li>
 </ul>
@@ -14428,12 +14495,24 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="04-IMDB-&#45936;&#51060;&#53552;&#47484;-&#51060;&#50857;&#54620;-Embedding-&#49892;&#49845;">04 IMDB &#45936;&#51060;&#53552;&#47484; &#51060;&#50857;&#54620; Embedding &#49892;&#49845;<a class="anchor-link" href="#04-IMDB-&#45936;&#51060;&#53552;&#47484;-&#51060;&#50857;&#54620;-Embedding-&#49892;&#49845;">&#182;</a></h3>
+<ul>
+<li><p>IMDB 데이터 셋</p>
+<ul>
+<li>총 5만개로 이루어진 긍정 부정의 리뷰</li>
+<li>이 데이터셋은 훈련 데이터 25,000개와 테스트 데이터 25,000개로 나뉘어 있고 각각 50%는 부정, 50%는 긍정 리뷰로 구성</li>
+<li>스탠포드 대학의 앤드류 마스(Andrew Maas)가 수집한 데이터 셋</li>
+</ul>
+</li>
+<li><p>train_data는 여러개의 단어로 이루어진 리뷰. 리뷰 단어는 각각 매칭된 word index 값으로 이루어짐.</p>
+</li>
+<li>train_labels는 1(긍정), 0(부정)이 됨.</li>
+</ul>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">imdb</span>
@@ -14448,7 +14527,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 특성으로 사용할 단어의 수</span>
@@ -14474,12 +14553,10 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>&lt;__array_function__ internals&gt;:5: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
-c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:159: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
-  x_train, y_train = np.array(xs[:idx]), np.array(labels[:idx])
-c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\datasets\imdb.py:160: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify &#39;dtype=object&#39; when creating the ndarray
-  x_test, y_test = np.array(xs[idx:]), np.array(labels[idx:])
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb.npz
+17465344/17464789 [==============================] - 0s 0us/step
+17473536/17464789 [==============================] - 0s 0us/step
 </pre>
 </div>
 </div>
@@ -14491,7 +14568,7 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span>
@@ -14510,7 +14587,7 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -14528,7 +14605,7 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -14603,17 +14680,27 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#45796;&#50577;&#54620; &#44600;&#51060;&#44032; &#47532;&#48624;&#44032; &#51080;&#51012; &#44163;&#51060;&#45796;.<a class="anchor-link" href="#&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#182;</a></h3><ul>
+<h3 id="&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#45796;&#50577;&#54620; &#44600;&#51060;&#44032; &#47532;&#48624;&#44032; &#51080;&#51012; &#44163;&#51060;&#45796;.<a class="anchor-link" href="#&#45796;&#50577;&#54620;-&#44600;&#51060;&#44032;-&#47532;&#48624;&#44032;-&#51080;&#51012;-&#44163;&#51060;&#45796;.">&#182;</a></h3>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
 <li>리뷰에서 맨 마지막 50개 단어를 얻고, 나머지는 버린다. 또는 길이가 짧다면 0으로 채운다.</li>
 <li>시퀀스의 길이가 50개로 한다.</li>
 <li>리스트 형태의 리뷰를 2D 정수 텐서로 변환 : preprocessing.sequence.pad_sequences</li>
 </ul>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#53581;&#49828;&#53944;-&#45936;&#51060;&#53552;-&#51204;&#52376;&#47532;">&#53581;&#49828;&#53944; &#45936;&#51060;&#53552; &#51204;&#52376;&#47532;<a class="anchor-link" href="#&#53581;&#49828;&#53944;-&#45936;&#51060;&#53552;-&#51204;&#52376;&#47532;">&#182;</a></h3>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 리스트를 (samples, maxlen) 크기의 2D 정수 텐서로 변환합니다.</span>
@@ -14631,10 +14718,10 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;처음 : &quot;</span> <span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;변경 전 : &quot;</span> <span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;변경 후 : &quot;</span><span class="p">,</span> <span class="n">X_train_n</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test_n</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
@@ -14655,7 +14742,7 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>처음 :  (25000,) (25000,)
+<pre>변경 전 :  (25000,) (25000,)
 변경 후 :  (25000, 50) (25000, 50)
 </pre>
 </div>
@@ -14669,17 +14756,15 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="&#50780;-1D-&#53584;&#49436;&#47484;-2D&#53584;&#49436;&#47196;-&#48320;&#44221;&#54616;&#45716;&#44032;?">&#50780; 1D &#53584;&#49436;&#47484; 2D&#53584;&#49436;&#47196; &#48320;&#44221;&#54616;&#45716;&#44032;?<a class="anchor-link" href="#&#50780;-1D-&#53584;&#49436;&#47484;-2D&#53584;&#49436;&#47196;-&#48320;&#44221;&#54616;&#45716;&#44032;?">&#182;</a></h3><ul>
-<li>Embedding() 층은 다음과 같이 입력을 받는다.<ul>
-<li>(samples, sequence_length) </li>
-</ul>
-</li>
+<li>Embedding() 층은 다음과 같이 입력(1D텐서)을 받는다.</li>
+<li>(samples, sequence_length)</li>
 </ul>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -14695,13 +14780,56 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Embedding(단어 인덱스, 임베딩 차원-출력, input_length=시퀀스 길이)<ul>
-<li>출력 (단어 인덱스, 시퀀스 길이, 임베딩 차원-출력)</li>
+<li>Embedding층의 출력<ul>
+<li>(samples, sqeuence_length, embedding_dimensionality)</li>
+<li>(단어 인덱스, 시퀀스 길이, 임베딩 차원-출력)</li>
 </ul>
 </li>
 </ul>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#47784;&#45944;-&#44396;&#52629;">&#47784;&#45944; &#44396;&#52629;<a class="anchor-link" href="#&#47784;&#45944;-&#44396;&#52629;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">maxlen</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>50</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14710,8 +14838,8 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 
-<span class="c1"># 나중에 임베딩된 입력을 Flatten 층에서 펼치기 위해 Embedding 층에 </span>
-<span class="c1"># input_length를 지정</span>
+<span class="c1"># 나중에 임베딩된 입력을 </span>
+<span class="c1"># Flatten 층에서 펼치기 위해 Embedding 층에 input_length를 지정</span>
 <span class="c1"># Embedding 층의 입력은 2D (samples, maxlen) 이다.</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">maxlen</span><span class="p">))</span>
 
@@ -14723,33 +14851,123 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 </div>
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>무슨 말인가?<ul>
-<li>50개의 단어를 학습을 통해 16차원 임베딩 공간을 만든다는 것이다.</li>
-</ul>
-</li>
-</ul>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3D 임베딩 텐서를 (samples, maxlen * 8) 크기의 2D 텐서로 펼칩니다.</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Model: &#34;sequential_2&#34;
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding_4 (Embedding)     (None, 50, 8)             80000     
+                                                                 
+=================================================================
+Total params: 80,000
+Trainable params: 80,000
+Non-trainable params: 0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>최대 길이 50개의 단어를 학습을 통해 8차원 임베딩 공간을 만든다는 것이다.</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Model: &#34;sequential_2&#34;
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding_4 (Embedding)     (None, 50, 8)             80000     
+                                                                 
+ flatten_1 (Flatten)         (None, 400)               0         
+                                                                 
+ dense_1 (Dense)             (None, 1)                 401       
+                                                                 
+=================================================================
+Total params: 80,401
+Trainable params: 80,401
+Non-trainable params: 0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span> 
 
 <span class="c1"># 분류기를 추가합니다.</span>
 <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> 
               <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> 
               <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
-
-<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 
 <span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_n</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
                     <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
@@ -14774,40 +14992,28 @@ c:\users\toto\anaconda3\envs\tf20\lib\site-packages\tensorflow\python\keras\data
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Model: &#34;sequential_2&#34;
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_3 (Embedding)      (None, 50, 8)             80000     
-_________________________________________________________________
-flatten (Flatten)            (None, 400)               0         
-_________________________________________________________________
-dense (Dense)                (None, 1)                 401       
-=================================================================
-Total params: 80,401
-Trainable params: 80,401
-Non-trainable params: 0
-_________________________________________________________________
-Epoch 1/10
-625/625 [==============================] - 8s 10ms/step - loss: 0.6797 - acc: 0.5842 - val_loss: 0.5534 - val_acc: 0.7622
+<pre>Epoch 1/10
+625/625 [==============================] - 2s 3ms/step - loss: 0.6617 - acc: 0.6302 - val_loss: 0.5854 - val_acc: 0.7402
 Epoch 2/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.4908 - acc: 0.7907 - val_loss: 0.4336 - val_acc: 0.7960
+625/625 [==============================] - 1s 2ms/step - loss: 0.4803 - acc: 0.8007 - val_loss: 0.4482 - val_acc: 0.7932
 Epoch 3/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.3752 - acc: 0.8404 - val_loss: 0.4054 - val_acc: 0.8094
+625/625 [==============================] - 2s 3ms/step - loss: 0.3753 - acc: 0.8405 - val_loss: 0.4132 - val_acc: 0.8058
 Epoch 4/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.3268 - acc: 0.8595 - val_loss: 0.3994 - val_acc: 0.8122
+625/625 [==============================] - 1s 2ms/step - loss: 0.3248 - acc: 0.8626 - val_loss: 0.4038 - val_acc: 0.8126
 Epoch 5/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.2982 - acc: 0.8766 - val_loss: 0.3994 - val_acc: 0.8146
+625/625 [==============================] - 2s 2ms/step - loss: 0.2897 - acc: 0.8806 - val_loss: 0.4046 - val_acc: 0.8140
 Epoch 6/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.2614 - acc: 0.8923 - val_loss: 0.4052 - val_acc: 0.8150
+625/625 [==============================] - 1s 2ms/step - loss: 0.2604 - acc: 0.8957 - val_loss: 0.4103 - val_acc: 0.8130
 Epoch 7/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.2474 - acc: 0.9027 - val_loss: 0.4118 - val_acc: 0.8194
+625/625 [==============================] - 1s 2ms/step - loss: 0.2345 - acc: 0.9090 - val_loss: 0.4202 - val_acc: 0.8120
 Epoch 8/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.2257 - acc: 0.9141 - val_loss: 0.4213 - val_acc: 0.8122
+625/625 [==============================] - 1s 2ms/step - loss: 0.2114 - acc: 0.9203 - val_loss: 0.4328 - val_acc: 0.8074
 Epoch 9/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.2101 - acc: 0.9212 - val_loss: 0.4294 - val_acc: 0.8148
+625/625 [==============================] - 1s 2ms/step - loss: 0.1900 - acc: 0.9305 - val_loss: 0.4445 - val_acc: 0.8032
 Epoch 10/10
-625/625 [==============================] - 2s 3ms/step - loss: 0.1940 - acc: 0.9273 - val_loss: 0.4405 - val_acc: 0.8106
+625/625 [==============================] - 2s 3ms/step - loss: 0.1711 - acc: 0.9394 - val_loss: 0.4597 - val_acc: 0.8000
+CPU times: user 17.9 s, sys: 1.19 s, total: 19.1 s
+Wall time: 21.3 s
 </pre>
 </div>
 </div>
@@ -14822,9 +15028,9 @@ Epoch 10/10
 <ul>
 <li>검증 정확도가 80.3%입니다.</li>
 <li>리뷰 50개의 단어(시퀀스 길이)만 사용하여 좋은 결과를 얻었습니다.</li>
-<li>임베딩 층을 펼쳐 하나의 Dense 층으로 훈련하였으므로 입력 시퀀스 있는 각 단어를 독립적으로 다루었습니다.</li>
-<li>단어 사이의 관계나 문장 구조를 고려하지 않음.<ul>
-<li>해결책 : 각 시퀀스 전체를 고려한 특성이 학습되도록 <strong>임베딩 층 위에 순환 층이나 1D 합성곱 층을 추가</strong>하는 것이 좋다.</li>
+<li>임베딩 층을 펼쳐 하나의 Dense 층을 이용하여 학습수행. 입력 시퀀스 있는 각 단어를 독립적으로 다루었습니다.</li>
+<li>단어 사이의 <strong>관계나 문장 구조를 고려하지 않음</strong>.<ul>
+<li>해결책 : 각 시퀀스 전체를 고려한 특성이 학습되도록 <strong>임베딩 층 위에 순환 층</strong>이나 <strong>1D 합성곱 층을 추가</strong>하는 것이 좋다.</li>
 </ul>
 </li>
 </ul>
@@ -14833,12 +15039,15 @@ Epoch 10/10
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#53664;&#53360;&#51012;-&#48289;&#53552;&#47196;-&#48320;&#54872;&#54616;&#45716;-&#48169;&#48277;">&#53664;&#53360;&#51012; &#48289;&#53552;&#47196; &#48320;&#54872;&#54616;&#45716; &#48169;&#48277;<a class="anchor-link" href="#&#53664;&#53360;&#51012;-&#48289;&#53552;&#47196;-&#48320;&#54872;&#54616;&#45716;-&#48169;&#48277;">&#182;</a></h3><ul>
-<li>원-핫 인코딩</li>
-<li>원-핫 해싱 : 각 단어에 명시적으로 인덱스를 할당. 임의의 사이즈에 데이터를 매핑.</li>
+<h3 id="&#51221;&#47532;">&#51221;&#47532;<a class="anchor-link" href="#&#51221;&#47532;">&#182;</a></h3><ul>
+<li>토큰(단어 등)를 벡터로 변환하는 방법<ul>
+<li>원핫 인코딩</li>
+<li>원-핫 해싱 : : 각 단어에 명시적으로 인덱스를 할당. 임의의 사이즈에 데이터를 매핑.</li>
 <li>단어 임베딩 사용<ul>
-<li>케라스에서 Embedding을 이용하여 일정단어를 일정 차원의 수로 단어를 벡터화 시킨다.</li>
-<li>여기서의 가중치는 학습을 통해 특정 데이터에 특정된 임베딩 공간이 만들어진다.</li>
+<li>케라스에서 Embedding을 이용하여 <strong>일정단어를 일정 차원의 수로 단어를 벡터화</strong> 시킨다.</li>
+<li>여기서의 <strong>가중치는 학습</strong>을 통해 <strong>특정 데이터에 특정된 임베딩 공간</strong>이 만들어진다.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
