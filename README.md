@@ -7,7 +7,8 @@
  
 ### 딥러닝 기본 및 실습
 #### PDF
- * 기본개발 환경설치 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝기본환경만들기_tf26.pdf)
+ * 기본개발 환경설치(Window) [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf26.pdf)
+ * 기본개발 환경설치(mac) [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf29_mac.pdf)
  * 딥러닝 시작하기 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝입문_v10_2111.pdf)
  * 딥러닝 기본용어 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본기본용어_v10_2004.pdf) 
  * 딥러닝 기본 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2111.pdf) 
