@@ -16,7 +16,7 @@
  [기본_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
  [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
  * 텐서플로워기본  [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
- * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
+ * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_tf2x_modelUp/DL03_02_DROPOUT.pdf)
  * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_2111_v02.pdf)
  * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202012_v04_.pdf)
  
