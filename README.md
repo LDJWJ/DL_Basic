@@ -7,40 +7,40 @@
  
 ### 딥러닝 기본 및 실습
 #### PDF
- * 기본개발 환경설치(Window) [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf26.pdf)
- * 기본개발 환경설치(mac) [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf29_mac.pdf)
- * 딥러닝 시작하기 [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝입문_v10_2111.pdf)
- * 딥러닝 기본용어 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본기본용어_v10_2004.pdf) 
- * 딥러닝 기본 [pdf1](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2111.pdf) 
- * CNN 시작하기  [시작하기_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
- [기본_pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
+ * 기본개발 환경설치(Window) [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf26.pdf)
+ * 기본개발 환경설치(mac) [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf29_mac.pdf)
+ * 딥러닝 시작하기 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01_딥러닝입문_v10_2111.pdf)
+ * 딥러닝 기본용어 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본기본용어_v10_2004.pdf) 
+ * 딥러닝 기본 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2111.pdf) 
+ * CNN 시작하기  [시작하기_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
+ [기본_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
  [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
- * 텐서플로워기본  [pdf](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
- * 모델 개선(Dropout) [pdf](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
+ * 텐서플로워기본  [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
+ * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/DL03_02_DROPOUT.pdf)
  * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_2111_v02.pdf)
  * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202012_v04_.pdf)
  
 ### SourceCode 
 ### 딥러닝 시작하기
  * python기본 라이브러리 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/DL01_01_Python_Library_v10.pdf)
- * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy.pdf)
- * Bike Sharing Demand [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.html)   [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
- * Titanic [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html)   [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
+ * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy_2205.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy_2205.pdf)
+ * Bike Sharing Demand [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike.pdf)
+ * Titanic [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.pdf)
  
 ### MNIST 이미지 데이터 셋
- * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.pdf)
- * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.pdf)
- * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.pdf)
- * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.pdf)
+ * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel.pdf)
+ * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up.pdf)
+ * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up.pdf)
+ * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop.pdf)
  
 ### 영화 리뷰 긍정/부정 분류, 뉴스 기사 분류
- * 영화 리뷰 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.pdf)
- * 뉴스 기사 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.html)        [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.pdf)
+ * 영화 리뷰 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_01_01_movie_classification.pdf)
+ * 뉴스 기사 분류 [HTML](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_03_dl_pratice/ch03_05_01_news_classification.pdf)
  
 ### CNN
  * CNN 231n 참조 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_02/ch05_04_CNN_D_add_cs231n.html)
- * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.pdf)
- * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.pdf)
+ * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.pdf)
+ * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.pdf)
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
  * CNN Conv3 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.pdf)
  * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
