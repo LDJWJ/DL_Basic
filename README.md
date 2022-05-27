@@ -12,8 +12,8 @@
  * 딥러닝 시작하기 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01B_딥러닝입문_v10_2111.pdf)
  * 딥러닝 기본용어 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본기본용어_v10_2004.pdf) 
  * 딥러닝 기본 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v11_2111.pdf) 
- * CNN 시작하기  [시작하기_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2108.pdf)
- [기본_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2108.pdf)
+ * CNN 시작하기  [시작하기_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v02_2205.pdf)
+ [기본_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2205.pdf)
  [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN03_모델UP_2012_v01.pdf)
  * 텐서플로워기본  [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_tf2x_modelUp/DL03_02_DROPOUT.pdf)
@@ -39,7 +39,7 @@
  
 ### CNN
  * CNN 231n 참조 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_02/ch05_04_CNN_D_add_cs231n.html)
- * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1.pdf)
+ * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1_2205.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1_2205.pdf)
  * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2.pdf)
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
  * CNN Conv3 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.pdf)
