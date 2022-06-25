@@ -74,12 +74,16 @@
  * GAN - NeuralStyleTransfer
 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_gan/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
 
- 
+
+### 자동차 드라이버 이미지 데이터 분석
+ * 이미지 확인 및 gif만들기 [Link](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/kaggle-driver01-imageshow-220625.html)
+ * 이미지 EDA 및 CNN 모델 구축 [Link](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/kaggle-driver02-imageshow-220625.html)
+
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
  * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
-
+ 
 
 ### 참고 site
  * [Neural Network Playground](https://playground.tensorflow.org/) - https://playground.tensorflow.org/
