@@ -66,7 +66,7 @@
  * 텍스트 데이터 처리(3)-사전훈련모델[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.pdf)
  
 ### 딥러닝 RNN
- * RNN 모델 실습(1) - 값 예측 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN01_simpleRNN.pdf)
+ * RNN 모델 실습(1) - 순서가 있는 값 예측 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_01_RNN01_simpleRNN.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_01_RNN01_simpleRNN.pdf)
  * RNN 모델 실습(2) - 영화 리뷰 데이터 IMDB 실습 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_RNN02_IMDB.pdf)
  * RNN(LSTM) [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_02_RNN_LSTM.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_02_RNN_LSTM.pdf)
  
