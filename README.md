@@ -61,7 +61,7 @@
  * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.pdf)
 
 ### 딥러닝 자연어
- * 텍스트 데이터 처리(1)[HTML] - (https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
+ * 텍스트 데이터 처리(1) - [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textA_preprocessing_onehot.pdf)
  * 텍스트 데이터 처리(2) - WordEmbedding(단어 임베딩) [HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textB_wordembedding.pdf)
  * 텍스트 데이터 처리(3)-사전훈련모델[HTML](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_08_text/ch06_textC_pretrained.pdf)
  
