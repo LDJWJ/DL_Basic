@@ -17,7 +17,7 @@
  * 텐서플로워기본  [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_tf2x_modelUp/DL03_02_DROPOUT.pdf)
  * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_2111_v02.pdf)
- * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202012_v04_.pdf)
+ * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202011_v05.pdf)
  
 ### SourceCode 
 ### 딥러닝 시작하기
@@ -72,8 +72,8 @@
  * RNN 모델 실습(3) - 영화 리뷰 데이터 IMDB 실습 - LSTM [HTML](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_03_RNN_LSTM_IMDB_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_RNN/ch06_03_RNN_LSTM_IMDB_2207.pdf)
  
 ### 딥러닝 GAN
- * GAN - 적대적 생성 신경망
-[HTML](https://ldjwj.github.io/DL_Basic/part04_09_gan/ch08_03_keras_gan실습.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_gan실습.pdf)
+ * GAN - 적대적 생성 신경망(MNIST)
+[HTML](https://ldjwj.github.io/DL_Basic/part04_09_gan/ch08_03_gan_mnist_start_2208.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_gan_mnist_start_2208.pdf)
 
  * GAN - NeuralStyleTransfer
 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_gan/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
