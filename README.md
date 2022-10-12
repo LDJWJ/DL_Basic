@@ -45,6 +45,7 @@
  * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
  * CIFAR-10 (1)[HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10.pdf)
  * CIFAR-10 (2)[HTML]() [PDF]()
+ * CIFAR-10 (~모델 save) (3)[.py](https://ldjwj.github.io/DL_Basic/part05_01_flask/model_cifar.py)
 
 
 ### Cat vs Dog Dataset
