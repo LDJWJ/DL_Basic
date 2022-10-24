@@ -47,6 +47,10 @@
  * CIFAR-10 (2)[HTML]() [PDF]()
  * CIFAR-10 (~모델 save) (3)[.py](https://github.com/LDJWJ/DL_Basic/blob/main/part05_01_flask/model_cifar.py)
 
+### Surface Crack Detection
+ * 데이터 셋 : https://www.kaggle.com/datasets/arunrk7/surface-crack-detection
+ * 내용 : 콘크리트 표면 샘플 이미지(손상 예측)
+ * CNN 기본 모델 구축 (1) - [HTML](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/ch05_07_CNN_crackDetection_CNN.html)  [PDF](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/ch05_07_CNN_crackDetection_CNN.pdf)
 
 ### Cat vs Dog Dataset
  * CNN (1) - 기본모델 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.pdf)
