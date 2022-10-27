@@ -54,6 +54,7 @@
 
 ### Cat vs Dog Dataset
  * CNN (1) - 기본모델 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.pdf)
+ * CNN (1) - 기본모델(캐글노트북) [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_catvsdogs_withkaggle(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_catvsdogs_withkaggle(1).pdf)
  * CNN (2) - 이미지제너레이터 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab_2207.pdf)
  * CNN (3) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.pdf)
  * CNN (4) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wcolab.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wcolab.pdf)
