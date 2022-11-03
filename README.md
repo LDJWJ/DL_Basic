@@ -1,6 +1,6 @@
 # DL_Basic
  * 02 캐글 [이동](#01-캘리포니아-집값-데이터-분석)
- * 03 pytorch 시작하는 딥러닝 [이동](# pytorch-시작하기)
+ * 03 pytorch 시작하는 딥러닝 [이동](#pytorch-시작하기)
 
 ##  딥러닝 알아가기 첫걸음
  * 웹 페이지 주소 : https://ldjwj.github.io/DL_Basic/
