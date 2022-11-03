@@ -96,7 +96,7 @@
  * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
  
 
-### pytorch 시작하기
+## pytorch 시작하기
  * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
 
 
