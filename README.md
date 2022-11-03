@@ -1,5 +1,6 @@
 # DL_Basic
- 
+ * 02 캐글 [이동](#01-캘리포니아-집값-데이터-분석)
+ * 03 pytorch 시작하는 딥러닝 [이동](# pytorch-시작하기)
 
 ##  딥러닝 알아가기 첫걸음
  * 웹 페이지 주소 : https://ldjwj.github.io/DL_Basic/
@@ -94,6 +95,10 @@
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
  * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
  
+
+### pytorch 시작하기
+ * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
+
 
 ### 참고 site
  * [Neural Network Playground](https://playground.tensorflow.org/) - https://playground.tensorflow.org/
