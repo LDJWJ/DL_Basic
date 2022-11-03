@@ -98,7 +98,7 @@
 
 ## pytorch 시작하기
  * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
-
+ * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.pdf)
 
 ### 참고 site
  * [Neural Network Playground](https://playground.tensorflow.org/) - https://playground.tensorflow.org/
