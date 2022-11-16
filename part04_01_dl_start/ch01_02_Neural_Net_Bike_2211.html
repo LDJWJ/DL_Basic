@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14602,7 +14602,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>자전거 공유 업체 시간대별 데이터을 이용한 딥러닝 모델 만들기</li>
+<li>자전거 공유 업체 시간대별 대여 대수의 데이터을 이용한 딥러닝 모델 만들기</li>
 <li>URL : <a href="https://www.kaggle.com/competitions/bike-sharing-demand">https://www.kaggle.com/competitions/bike-sharing-demand</a></li>
 </ul>
 
@@ -14616,7 +14616,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A9%EC%B0%A8">&#47785;&#52264;<a class="anchor-link" href="#%EB%AA%A9%EC%B0%A8">&#182;</a></h3><p><a href="#1"> 01. 라이브러리 임포트 </a><br>
+<h3 style='color:DodgerBlue'><a id='99'> 목차 </a></h3><p><a href="#1"> 01. 라이브러리 임포트 </a><br>
 <a href="#2"> 02. 데이터 셋 로드 및 데이터 탐색 </a><br>
 <a href="#3"> 03. 입력(input)과 출력(output) 지정 </a><br>
 <a href="#4"> 04. 딥러닝 모델 만들기 및 학습 </a><br></p>
@@ -14693,11 +14693,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>tf version : 2.9.1
-keras version : 2.9.0
-numpy version : 1.23.1
-matplotlib version : 3.5.2
-pandas version : 1.4.3
+<pre>tf version : 2.10.0
+keras version : 2.10.0
+numpy version : 1.21.5
+matplotlib version : 3.5.1
+pandas version : 1.4.2
 </pre>
 </div>
 </div>
@@ -14951,7 +14951,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>X : hour, temp (시간, 온도)</p>
+<p>X : weather, temp (시간, 온도)</p>
 <p>y : count - 자전거 시간대별 렌탈 대수</p>
 
 </div>
@@ -14962,7 +14962,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_col</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;weather&#39;</span><span class="p">,</span> <span class="s1">&#39;temp&#39;</span><span class="p">]</span>
@@ -14979,7 +14979,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span> <span class="n">input_col</span> <span class="p">]</span>
@@ -15008,7 +15008,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -15024,7 +15024,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> 
@@ -15041,7 +15041,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -15082,7 +15082,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 난수 발생 패턴 결정 0</span>
@@ -15131,7 +15131,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -15148,13 +15148,13 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span> <span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
@@ -15168,7 +15168,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -15197,17 +15197,17 @@ None
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
- dense (Dense)               (None, 30)                90        
+ dense (Dense)               (None, 32)                96        
                                                                  
- dense_1 (Dense)             (None, 15)                465       
+ dense_1 (Dense)             (None, 16)                528       
                                                                  
- dense_2 (Dense)             (None, 15)                240       
+ dense_2 (Dense)             (None, 16)                272       
                                                                  
- dense_3 (Dense)             (None, 1)                 16        
+ dense_3 (Dense)             (None, 1)                 17        
                                                                  
 =================================================================
-Total params: 811
-Trainable params: 811
+Total params: 913
+Trainable params: 913
 Non-trainable params: 0
 _________________________________________________________________
 </pre>
@@ -15247,6 +15247,24 @@ _________________________________________________________________
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 학습의 조기 종료 함수 - EarlyStopping()</span>
+<span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="kn">import</span> <span class="n">EarlyStopping</span>
+<span class="n">early_stopping</span> <span class="o">=</span> <span class="n">EarlyStopping</span><span class="p">(</span><span class="n">patience</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># 조기종료 콜백함수 정의</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15263,11 +15281,14 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span> <span class="o">=</span> <span class="s1">&#39;mean_squared_error&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> 
+          <span class="n">validation_data</span><span class="o">=</span><span class="p">[</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">],</span>
+          <span class="n">batch_size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> 
+          <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">early_stopping</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -15289,46 +15310,150 @@ _________________________________________________________________
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Epoch 1/20
-817/817 [==============================] - 3s 2ms/step - loss: 38706.3516
-Epoch 2/20
-817/817 [==============================] - 1s 2ms/step - loss: 27885.8184
-Epoch 3/20
-817/817 [==============================] - 1s 2ms/step - loss: 27864.7461
-Epoch 4/20
-817/817 [==============================] - 1s 2ms/step - loss: 27796.6406
-Epoch 5/20
-817/817 [==============================] - 1s 2ms/step - loss: 27740.3535
-Epoch 6/20
-817/817 [==============================] - 1s 2ms/step - loss: 27718.2988
-Epoch 7/20
-817/817 [==============================] - 1s 2ms/step - loss: 27683.9512
-Epoch 8/20
-817/817 [==============================] - 1s 2ms/step - loss: 27673.3262
-Epoch 9/20
-817/817 [==============================] - 1s 2ms/step - loss: 27663.5430
-Epoch 10/20
-817/817 [==============================] - 1s 2ms/step - loss: 27609.6699
-Epoch 11/20
-817/817 [==============================] - 1s 2ms/step - loss: 27616.7930
-Epoch 12/20
-817/817 [==============================] - 1s 2ms/step - loss: 27606.2773
-Epoch 13/20
-817/817 [==============================] - 1s 2ms/step - loss: 27597.0020
-Epoch 14/20
-817/817 [==============================] - 1s 2ms/step - loss: 27539.1953
-Epoch 15/20
-817/817 [==============================] - 1s 2ms/step - loss: 27577.2891
-Epoch 16/20
-817/817 [==============================] - 1s 2ms/step - loss: 27565.6875
-Epoch 17/20
-817/817 [==============================] - 1s 2ms/step - loss: 27551.3359
-Epoch 18/20
-817/817 [==============================] - 1s 2ms/step - loss: 27562.4727
-Epoch 19/20
-817/817 [==============================] - 1s 2ms/step - loss: 27551.9199
-Epoch 20/20
-817/817 [==============================] - 1s 2ms/step - loss: 27542.7266
+<pre>Epoch 1/100
+511/511 [==============================] - 2s 2ms/step - loss: 37601.4141 - val_loss: 27562.2598
+Epoch 2/100
+511/511 [==============================] - 1s 2ms/step - loss: 27881.7148 - val_loss: 27502.8164
+Epoch 3/100
+511/511 [==============================] - 1s 1ms/step - loss: 27826.5254 - val_loss: 27491.9258
+Epoch 4/100
+511/511 [==============================] - 1s 2ms/step - loss: 27780.5469 - val_loss: 27411.8594
+Epoch 5/100
+511/511 [==============================] - 1s 2ms/step - loss: 27728.5938 - val_loss: 27380.1211
+Epoch 6/100
+511/511 [==============================] - 1s 2ms/step - loss: 27735.6094 - val_loss: 27422.2305
+Epoch 7/100
+511/511 [==============================] - 1s 2ms/step - loss: 27703.3672 - val_loss: 27364.6445
+Epoch 8/100
+511/511 [==============================] - 1s 2ms/step - loss: 27685.1992 - val_loss: 27308.6133
+Epoch 9/100
+511/511 [==============================] - 1s 2ms/step - loss: 27652.4551 - val_loss: 27366.2871
+Epoch 10/100
+511/511 [==============================] - 1s 2ms/step - loss: 27602.9727 - val_loss: 27460.8047
+Epoch 11/100
+511/511 [==============================] - 1s 2ms/step - loss: 27633.3027 - val_loss: 27365.1191
+Epoch 12/100
+511/511 [==============================] - 1s 2ms/step - loss: 27603.9375 - val_loss: 27255.8359
+Epoch 13/100
+511/511 [==============================] - 1s 2ms/step - loss: 27606.1914 - val_loss: 27251.7383
+Epoch 14/100
+511/511 [==============================] - 1s 2ms/step - loss: 27550.2070 - val_loss: 27491.2246
+Epoch 15/100
+511/511 [==============================] - 1s 2ms/step - loss: 27578.2344 - val_loss: 27260.3184
+Epoch 16/100
+511/511 [==============================] - 1s 2ms/step - loss: 27544.0645 - val_loss: 27239.5215
+Epoch 17/100
+511/511 [==============================] - 1s 2ms/step - loss: 27575.0234 - val_loss: 27217.3867
+Epoch 18/100
+511/511 [==============================] - 1s 2ms/step - loss: 27574.8535 - val_loss: 27281.2969
+Epoch 19/100
+511/511 [==============================] - 1s 2ms/step - loss: 27558.8164 - val_loss: 27239.4922
+Epoch 20/100
+511/511 [==============================] - 1s 2ms/step - loss: 27535.5391 - val_loss: 27311.1953
+Epoch 21/100
+511/511 [==============================] - 1s 2ms/step - loss: 27522.7969 - val_loss: 27246.8750
+Epoch 22/100
+511/511 [==============================] - 1s 2ms/step - loss: 27529.7227 - val_loss: 27212.6465
+Epoch 23/100
+511/511 [==============================] - 1s 2ms/step - loss: 27528.5176 - val_loss: 27193.1016
+Epoch 24/100
+511/511 [==============================] - 1s 2ms/step - loss: 27491.9609 - val_loss: 27244.5938
+Epoch 25/100
+511/511 [==============================] - 1s 2ms/step - loss: 27527.7598 - val_loss: 27183.5215
+Epoch 26/100
+511/511 [==============================] - 1s 2ms/step - loss: 27524.2969 - val_loss: 27281.6699
+Epoch 27/100
+511/511 [==============================] - 1s 2ms/step - loss: 27519.2969 - val_loss: 27450.4453
+Epoch 28/100
+511/511 [==============================] - 1s 2ms/step - loss: 27488.3281 - val_loss: 27427.1309
+Epoch 29/100
+511/511 [==============================] - 1s 2ms/step - loss: 27507.6250 - val_loss: 27179.2422
+Epoch 30/100
+511/511 [==============================] - 1s 2ms/step - loss: 27521.1250 - val_loss: 27245.6895
+Epoch 31/100
+511/511 [==============================] - 1s 2ms/step - loss: 27491.3516 - val_loss: 27395.5469
+Epoch 32/100
+511/511 [==============================] - 1s 1ms/step - loss: 27480.8633 - val_loss: 27233.8496
+Epoch 33/100
+511/511 [==============================] - 1s 1ms/step - loss: 27501.6289 - val_loss: 27205.1660
+Epoch 34/100
+511/511 [==============================] - 1s 2ms/step - loss: 27468.9629 - val_loss: 27215.5332
+Epoch 35/100
+511/511 [==============================] - 1s 2ms/step - loss: 27501.2598 - val_loss: 27297.7227
+Epoch 36/100
+511/511 [==============================] - 1s 2ms/step - loss: 27499.4473 - val_loss: 27156.3555
+Epoch 37/100
+511/511 [==============================] - 1s 2ms/step - loss: 27474.3281 - val_loss: 27172.6523
+Epoch 38/100
+511/511 [==============================] - 1s 2ms/step - loss: 27456.0898 - val_loss: 27155.2266
+Epoch 39/100
+511/511 [==============================] - 1s 2ms/step - loss: 27461.4941 - val_loss: 27185.2109
+Epoch 40/100
+511/511 [==============================] - 1s 2ms/step - loss: 27457.3691 - val_loss: 27184.4961
+Epoch 41/100
+511/511 [==============================] - 1s 2ms/step - loss: 27479.6660 - val_loss: 27223.9902
+Epoch 42/100
+511/511 [==============================] - 1s 1ms/step - loss: 27478.2988 - val_loss: 27148.6230
+Epoch 43/100
+511/511 [==============================] - 1s 1ms/step - loss: 27487.1133 - val_loss: 27147.9258
+Epoch 44/100
+511/511 [==============================] - 1s 2ms/step - loss: 27449.9316 - val_loss: 27201.1133
+Epoch 45/100
+511/511 [==============================] - 1s 2ms/step - loss: 27444.1543 - val_loss: 27395.9531
+Epoch 46/100
+511/511 [==============================] - 1s 2ms/step - loss: 27447.4043 - val_loss: 27156.2461
+Epoch 47/100
+511/511 [==============================] - 1s 2ms/step - loss: 27475.3496 - val_loss: 27145.1660
+Epoch 48/100
+511/511 [==============================] - 1s 2ms/step - loss: 27472.4238 - val_loss: 27167.4004
+Epoch 49/100
+511/511 [==============================] - 1s 2ms/step - loss: 27465.2285 - val_loss: 27200.9902
+Epoch 50/100
+511/511 [==============================] - 1s 2ms/step - loss: 27453.1914 - val_loss: 27164.5078
+Epoch 51/100
+511/511 [==============================] - 1s 2ms/step - loss: 27467.5449 - val_loss: 27296.9102
+Epoch 52/100
+511/511 [==============================] - 1s 2ms/step - loss: 27474.7148 - val_loss: 27143.4863
+Epoch 53/100
+511/511 [==============================] - 1s 2ms/step - loss: 27475.8105 - val_loss: 27217.1191
+Epoch 54/100
+511/511 [==============================] - 1s 2ms/step - loss: 27471.6152 - val_loss: 27293.3496
+Epoch 55/100
+511/511 [==============================] - 1s 2ms/step - loss: 27458.7949 - val_loss: 27258.4531
+Epoch 56/100
+511/511 [==============================] - 1s 2ms/step - loss: 27432.8184 - val_loss: 27233.8965
+Epoch 57/100
+511/511 [==============================] - 1s 2ms/step - loss: 27426.7031 - val_loss: 27146.7656
+Epoch 58/100
+511/511 [==============================] - 1s 2ms/step - loss: 27437.7188 - val_loss: 27213.7520
+Epoch 59/100
+511/511 [==============================] - 1s 2ms/step - loss: 27446.7227 - val_loss: 27164.2207
+Epoch 60/100
+511/511 [==============================] - 1s 2ms/step - loss: 27422.4141 - val_loss: 27141.3633
+Epoch 61/100
+511/511 [==============================] - 1s 2ms/step - loss: 27455.0098 - val_loss: 27167.9434
+Epoch 62/100
+511/511 [==============================] - 1s 2ms/step - loss: 27456.4434 - val_loss: 27140.8730
+Epoch 63/100
+511/511 [==============================] - 1s 2ms/step - loss: 27464.4043 - val_loss: 27151.1680
+Epoch 64/100
+511/511 [==============================] - 1s 1ms/step - loss: 27437.4316 - val_loss: 27161.6602
+Epoch 65/100
+511/511 [==============================] - 1s 2ms/step - loss: 27451.5098 - val_loss: 27142.1309
+Epoch 66/100
+511/511 [==============================] - 1s 2ms/step - loss: 27458.4707 - val_loss: 27273.7949
+Epoch 67/100
+511/511 [==============================] - 1s 2ms/step - loss: 27450.6465 - val_loss: 27276.3184
+Epoch 68/100
+511/511 [==============================] - 1s 2ms/step - loss: 27440.6035 - val_loss: 27150.0918
+Epoch 69/100
+511/511 [==============================] - 1s 2ms/step - loss: 27411.6562 - val_loss: 27143.0215
+Epoch 70/100
+511/511 [==============================] - 1s 2ms/step - loss: 27439.0625 - val_loss: 27212.4844
+Epoch 71/100
+511/511 [==============================] - 1s 1ms/step - loss: 27466.7109 - val_loss: 27151.0273
+Epoch 72/100
+511/511 [==============================] - 1s 2ms/step - loss: 27453.4219 - val_loss: 27185.6895
 </pre>
 </div>
 </div>
@@ -15336,13 +15461,13 @@ Epoch 20/20
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;keras.callbacks.History at 0x12c0f038cd0&gt;</pre>
+<pre>&lt;keras.callbacks.History at 0x1e292d79dc0&gt;</pre>
 </div>
 
 </div>
@@ -15367,7 +15492,7 @@ Epoch 20/20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
@@ -15392,7 +15517,7 @@ Epoch 20/20
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>86/86 [==============================] - 0s 1ms/step - loss: 27238.3242
+<pre>86/86 [==============================] - 0s 1ms/step - loss: 27185.6953
 </pre>
 </div>
 </div>
@@ -15400,13 +15525,13 @@ Epoch 20/20
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>27238.32421875</pre>
+<pre>27185.6953125</pre>
 </div>
 
 </div>
@@ -15431,7 +15556,7 @@ Epoch 20/20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
@@ -15456,7 +15581,7 @@ Epoch 20/20
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>203/203 [==============================] - 0s 2ms/step
+<pre>203/203 [==============================] - 0s 1ms/step
 </pre>
 </div>
 </div>
@@ -15470,7 +15595,7 @@ Epoch 20/20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./bike/sampleSubmission.csv&quot;</span><span class="p">)</span>
@@ -15489,10 +15614,10 @@ Epoch 20/20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;nn_sub_2207.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sub</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;./bike/nn_sub_2207.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15510,8 +15635,8 @@ Epoch 20/20
 <h3 id="%EC%B6%94%EA%B0%80-%EC%8B%A4%EC%8A%B5">&#52628;&#44032; &#49892;&#49845;<a class="anchor-link" href="#%EC%B6%94%EA%B0%80-%EC%8B%A4%EC%8A%B5">&#182;</a></h3><p>변수를 추가를 통해 성능을 향상시켜보자(5-10분) - epoch수도 증가</p>
 <ul>
 <li>(예) ['hour', 'temp', 'dayofweek', 'workingday', 'season', 'weather']</li>
-<li>(예) 100epoch, ['hour', 'temp', 'dayofweek', 'workingday', 'season', 'weather'] =&gt; 0.82071</li>
-<li>(예) 300epoch, ['hour', 'temp', 'dayofweek', 'workingday', 'season', 'weather'] =&gt; 0.70710</li>
+<li>(예) 200epoch, ['hour', 'temp', 'dayofweek', 'workingday', 'season', 'weather'] </li>
+<li>(예) 300epoch, ['hour', 'temp', 'dayofweek', 'workingday', 'season', 'weather']</li>
 <li>input_col = ['hour', 'temp', 'weather', 'season', 'holiday', 'temp', 'workingday', 'windspeed'] 300epoch</li>
 </ul>
 
