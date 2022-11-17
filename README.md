@@ -22,9 +22,9 @@
  
 ### SourceCode 
 ### 딥러닝 시작하기
- * python기본 라이브러리 [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/DL01_01_Python_Library_v10.pdf)
- * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy_2205.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_KerasStart_numpy_2205.pdf)
- * Bike Sharing Demand [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike_2207.pdf)
+ * python 기본 함수 및 기본 라이브러리 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.html) [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.pdf)
+ * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_KerasStart_numpy_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_KerasStart_numpy_2211.pdf)
+ * Bike Sharing Demand [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_Neural_Net_Bike_2211.pdf)
  * Titanic [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic_2207.pdf)
 
 ### MNIST 이미지 데이터 셋
@@ -100,8 +100,7 @@
  * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
  * 기본 텐서의 이해 및 기본 함수 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.pdf)
  * 선형회귀 모델 기본[HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.pdf)
- * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.pdf)
-
+ * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.pdf)
 
 
 ### 참고 site
