@@ -45,8 +45,7 @@
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
  * CNN Conv3 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.pdf)
  * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
- * CIFAR-10 (1)[HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10.pdf)
- * CIFAR-10 (2)[HTML]() [PDF]()
+ * CIFAR-10 (1)[HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10_2211.pdf)
  * CIFAR-10 (~모델 save) (3)[.py](https://github.com/LDJWJ/DL_Basic/blob/main/part05_01_flask/model_cifar.py)
 
 ### Surface Crack Detection
@@ -63,8 +62,8 @@
 
 ### Tensorflow 2.x 실습
  * MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.pdf)
- * fashion MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_tf20_fashionMNIST_v11.pdf)
- * fashion MNIST 모델 성능 개선 [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_tf20_fashionMNIST_Up_v11.pdf)
+ * fashion MNIST DNN [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST01_DNN_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST01_DNN_2211.pdf)
+ * fashion MNIST CNN [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_fashionMNIST02_CNN_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_fashionMNIST02_CNN_2211.pdf)
  * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.pdf)
 
 ### 딥러닝 자연어
