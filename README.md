@@ -39,7 +39,7 @@
  
 ### CNN
  * CNN FirstModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A1_2211.pdf)
- * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A2_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB01_CNN_A2_2211.pdf)
+ * CNN SecondModel [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB02_CNN_A2_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_01_Keras_LAB02_CNN_A2_2211.pdf)
  
  * CNN 231n 참조 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_02/ch05_04_CNN_D_add_cs231n.html)
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
