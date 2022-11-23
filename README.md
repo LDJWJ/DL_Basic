@@ -63,7 +63,7 @@
 ### Tensorflow 2.x 실습
  * MNIST  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_09_tf20_start.pdf)
  * fashion MNIST DNN [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST01_DNN_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST01_DNN_2211.pdf)
- * fashion MNIST CNN [HTML](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_fashionMNIST02_CNN_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_modelUp/ch05_10_fashionMNIST02_CNN_2211.pdf)
+ * fashion MNIST CNN [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST02_CNN_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_10_fashionMNIST02_CNN_2211.pdf)
  * 캐글(Dogs vs. Cats)  [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsandDog(2)_onkaggle.pdf)
 
 ### 딥러닝 자연어
