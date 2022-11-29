@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14605,7 +14605,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A9%EC%B0%A8">&#47785;&#52264;<a class="anchor-link" href="#%EB%AA%A9%EC%B0%A8">&#182;</a></h3><p><a href="#1"> 01 합성망 신경망 알아보기 </a><br>
+<h3 style='color:DodgerBlue'><a id='99'> 목차 </a></h3><p><a href="#1"> 01 합성망 신경망 알아보기 </a><br>
 <a href="#2"> 02 MNIST 데이터 셋 - CNN 모델 구축 </a><br>
 <a href="#3"> 03 모델 학습 및 평가 </a><br>
 <a href="#4"> 04 모델 구축 및 학습, 평가 </a><br></p>
@@ -14684,7 +14684,9 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 style='color:DodgerBlue'><a id='1'> 01 합성망 신경망 알아보기 </a></h3>
+<p><a id='1'></a></p>
+<h3 style='color:DodgerBlue;font-size:20px'> 01 합성망 신경망 알아보기 </h3><p><a href="#99"> 목차로 이동하기 </a><br></p>
+
 </div>
 </div>
 </div>
@@ -14693,7 +14695,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -14722,7 +14724,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2.9.0
+<pre>2.11.0
 </pre>
 </div>
 </div>
@@ -14803,19 +14805,32 @@ from tensorflow.keras import layers</code></pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%EB%AA%A8%EB%8D%B8-%EA%B5%AC%EC%B6%95">&#47784;&#45944; &#44396;&#52629;<a class="anchor-link" href="#%EB%AA%A8%EB%8D%B8-%EA%B5%AC%EC%B6%95">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> 
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> 
                         <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
-<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">(</span><span class="n">pool_size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Conv2D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
 </pre></div>
 
@@ -14831,7 +14846,7 @@ from tensorflow.keras import layers</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%BB%A8%EB%B8%8C%EB%84%B7-%EA%B5%AC%EC%A1%B0-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">&#52968;&#48652;&#45367; &#44396;&#51312; &#50508;&#50500;&#48372;&#44592;<a class="anchor-link" href="#%EC%BB%A8%EB%B8%8C%EB%84%B7-%EA%B5%AC%EC%A1%B0-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
+<h3 id="CNN-%EA%B5%AC%EC%A1%B0-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">CNN &#44396;&#51312; &#50508;&#50500;&#48372;&#44592;<a class="anchor-link" href="#CNN-%EA%B5%AC%EC%A1%B0-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14840,7 +14855,7 @@ from tensorflow.keras import layers</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -14903,7 +14918,7 @@ _________________________________________________________________
 <li>(height, width, channels)크기의 3D텐서</li>
 <li>높이와 넓이 차원은 네트워크가 깊어질수록 작아지는 경향이 있다. </li>
 <li>채널의 수는 Conv2D층에 전달된 첫번째 매개변수에 의해 조절된다.</li>
-<li>(3,3,64)를 완전 연결 네트워크에 펼쳐 연결한다.</li>
+<li>(5,5,64)를 최종 이미지를 FCN(완전 연결 네트워크)의 1차원 벡터로 변경 후, 이를 연결한다.</li>
 </ul>
 
 </div>
@@ -14925,7 +14940,7 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Flatten</span><span class="p">())</span>
@@ -14943,7 +14958,7 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -15008,7 +15023,9 @@ _________________________________________________________________
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 style='color:DodgerBlue'><a id='2'> 02 MNIST 데이터 셋 - CNN 모델 구축 </a></h3><ul>
+<p><a id='2'></a></p>
+<h3 style='color:DodgerBlue;font-size:20px'> 02 MNIST 데이터 셋 - CNN 모델 구축 </h3><p><a href="#99"> 목차로 이동하기 </a><br></p>
+<ul>
 <li>MNIST 데이터 셋 준비</li>
 </ul>
 
@@ -15020,7 +15037,7 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
@@ -15049,7 +15066,7 @@ _________________________________________________________________
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
-11490434/11490434 [==============================] - 2s 0us/step
+11490434/11490434 [==============================] - 1s 0us/step
 </pre>
 </div>
 </div>
@@ -15058,12 +15075,27 @@ _________________________________________________________________
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">&#45936;&#51060;&#53552; &#51204;&#52376;&#47532;<a class="anchor-link" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">&#182;</a></h3><ul>
+<li>이미지 Reshape</li>
+<li>정규화 0~1사이의 값으로 변경</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 입력층은 이미지 그대로, 입력층의 값의 범위 정규화</span>
@@ -15088,7 +15120,7 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;입력층 데이터(X) : &quot;</span><span class="p">,</span><span class="n">train_images</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">test_images</span><span class="o">.</span><span class="n">shape</span> <span class="p">)</span>
@@ -15131,7 +15163,12 @@ _________________________________________________________________
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 style='color:DodgerBlue'><a id='3'> 03 모델 학습 및 평가(CNN모델) </a></h3>
+<p><a id='3'></a></p>
+<h3 style='color:DodgerBlue;font-size:20px'> 03 모델 학습 및 평가(CNN모델) </h3><p><a href="#99"> 목차로 이동하기 </a><br></p>
+<ul>
+<li>MNIST 데이터 셋 준비</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -15145,7 +15182,11 @@ _________________________________________________________________
 <h3 id="%EB%B9%84%EC%9A%A9%ED%95%A8%EC%88%98,-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%A8%EC%88%98-%EA%B5%AC%EC%84%B1">&#48708;&#50857;&#54632;&#49688;, &#52572;&#51201;&#54868; &#54632;&#49688; &#44396;&#49457;<a class="anchor-link" href="#%EB%B9%84%EC%9A%A9%ED%95%A8%EC%88%98,-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%A8%EC%88%98-%EA%B5%AC%EC%84%B1">&#182;</a></h3><ul>
 <li>비용함수와 최적화 함수 지정</li>
 <li>비용함수 : categorical_crossentropy </li>
-<li>최적화 함수 : rmsprop</li>
+<li>최적화 함수 : rmsprop<ul>
+<li>변수(feature)마다 적절한 학습률을 적용하여 효율적인 학습 진행</li>
+<li>AdaGrad보다 학습을 오래 할 수 있다.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -15156,7 +15197,7 @@ _________________________________________________________________
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -15188,17 +15229,16 @@ _________________________________________________________________
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Epoch 1/5
-938/938 [==============================] - 24s 25ms/step - loss: 0.1731 - accuracy: 0.9472 - val_loss: 0.0584 - val_accuracy: 0.9813
+938/938 [==============================] - 31s 33ms/step - loss: 0.1724 - accuracy: 0.9474 - val_loss: 0.0642 - val_accuracy: 0.9782
 Epoch 2/5
-938/938 [==============================] - 24s 25ms/step - loss: 0.0521 - accuracy: 0.9841 - val_loss: 0.0370 - val_accuracy: 0.9882
+938/938 [==============================] - 34s 36ms/step - loss: 0.0500 - accuracy: 0.9845 - val_loss: 0.0376 - val_accuracy: 0.9871
 Epoch 3/5
-938/938 [==============================] - 23s 25ms/step - loss: 0.0359 - accuracy: 0.9889 - val_loss: 0.0336 - val_accuracy: 0.9886
+938/938 [==============================] - 33s 35ms/step - loss: 0.0342 - accuracy: 0.9895 - val_loss: 0.0262 - val_accuracy: 0.9903
 Epoch 4/5
-938/938 [==============================] - 23s 25ms/step - loss: 0.0269 - accuracy: 0.9916 - val_loss: 0.0300 - val_accuracy: 0.9907
+938/938 [==============================] - 33s 35ms/step - loss: 0.0246 - accuracy: 0.9924 - val_loss: 0.0314 - val_accuracy: 0.9898
 Epoch 5/5
-938/938 [==============================] - 23s 24ms/step - loss: 0.0214 - accuracy: 0.9933 - val_loss: 0.0250 - val_accuracy: 0.9913
-CPU times: total: 13min 43s
-Wall time: 1min 56s
+938/938 [==============================] - 35s 38ms/step - loss: 0.0200 - accuracy: 0.9939 - val_loss: 0.0299 - val_accuracy: 0.9904
+Wall time: 2min 46s
 </pre>
 </div>
 </div>
@@ -15206,13 +15246,13 @@ Wall time: 1min 56s
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;keras.callbacks.History at 0x248c6d570a0&gt;</pre>
+<pre>&lt;keras.callbacks.History at 0x287dc8e5130&gt;</pre>
 </div>
 
 </div>
@@ -15226,7 +15266,7 @@ Wall time: 1min 56s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_loss</span><span class="p">,</span> <span class="n">test_acc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images</span><span class="p">,</span> <span class="n">test_labels</span><span class="p">)</span>
@@ -15252,8 +15292,8 @@ Wall time: 1min 56s
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>313/313 [==============================] - 1s 4ms/step - loss: 0.0250 - accuracy: 0.9913
-0.9912999868392944
+<pre>313/313 [==============================] - 2s 6ms/step - loss: 0.0299 - accuracy: 0.9904
+0.9904000163078308
 </pre>
 </div>
 </div>
