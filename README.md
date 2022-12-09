@@ -93,14 +93,18 @@
 ### 캐글
  * Titanic - Machine Learning from Disaster [Link] https://www.kaggle.com/c/titanic
  * Bike Sharing Demand [Link] https://www.kaggle.com/c/bike-sharing-demand
- * Dogs vs. Cats [Link] https://www.kaggle.com/c/dogs-vs-cats/overview
- 
+ * Dogs vs. Cats [Link](https://www.kaggle.com/c/dogs-vs-cats/overview)
+ * Spaceship Titanic [Link](https://www.kaggle.com/competitions/spaceship-titanic)
+ * PUBG Finish Placement Prediction(Kernels Only) [Link](https://www.kaggle.com/competitions/pubg-finish-placement-prediction)
+ * American Express - Default Prediction [Link](https://www.kaggle.com/competitions/https://www.kaggle.com/competitions/amex-default-prediction)
+ * ASHRAE - Great Energy Predictor II [Link](https://www.kaggle.com/competitions/ashrae-energy-prediction)
+
 
 ## pytorch 시작하기
  * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
  * 기본 텐서의 이해 및 기본 함수 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.pdf)
  * 선형회귀 모델 기본[HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.pdf)
- * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_fashionMnist_2211.pdf)
+ * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.pdf)
 
 
 ### 참고 site
