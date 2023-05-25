@@ -85,6 +85,17 @@
  * GAN - NeuralStyleTransfer
 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
 
+### 전이학습
+ * yolo3를 활용한 객체 인식
+[HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.pdf)
+
+### yolo3
+ * yolo3를 활용한 객체 인식
+[HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolo_basic01.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolo_basic01.pdf)
+
+### 텍스트 OCR
+ * 이미지에서 텍스트 추출
+[HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/TextExt_Basic_01.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/TextExt_Basic_01.pdf)
 
 ### 자동차 드라이버 이미지 데이터 분석
  * 이미지 확인 및 gif만들기 [Link](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/kaggle-driver01-imageshow-220625.html)
