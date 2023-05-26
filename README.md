@@ -86,7 +86,7 @@
 [HTML](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_09_GAN/ch08_03_keras_GAN_NeuralStyleTransfer.pdf)
 
 ### 전이학습
- * yolo3를 활용한 객체 인식
+ * resnet50을 이용한 전이학습
 [HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.pdf)
 
 ### yolo3
