@@ -44,7 +44,7 @@
  * CNN 231n 참조 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_02/ch05_04_CNN_D_add_cs231n.html)
  * CNN Upgrade - LeakyRelu [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB03_CNN_add_B1.pdf)
  * CNN Conv3 [HTML](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.html)   [PDF](https://ldjwj.github.io/DL_Basic/part04_04_dl_cnn_01/ch05_02_keras_LAB04_CNN_add_B2.pdf)
- * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf20_CatsAndDog(1).pdf)
+ * Dogs vs Cats [HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_11_tf2x_CNN_CatvsDogs(1)_wlocal_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/ch05_11_tf2x_CNN_CatvsDogs(1)_wlocal_2211.pdf)
  * CIFAR-10 (1)[HTML](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_06_dl_tf2x/ch05_03_tf2x_LAB07_CNN_cifar10_2211.pdf)
  * CIFAR-10 (~모델 save) (3)[.py](https://github.com/LDJWJ/DL_Basic/blob/main/part05_01_flask/model_cifar.py)
 
