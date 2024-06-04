@@ -29,7 +29,7 @@
  * Titanic [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic_2207.pdf)
 
 ### MNIST 이미지 데이터 셋
- * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_2207.pdf)
+ * MNIST 01 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_WC_V11.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_WC_V11.pdf)
  * MNIST 02 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.pdf)
  * MNIST 03 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up_2207.pdf)
  * MNIST 04 [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop_2207.pdf)
