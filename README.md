@@ -117,10 +117,15 @@
 
 
 ## pytorch 시작하기
- * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_start_2211.pdf)
- * 기본 텐서의 이해 및 기본 함수 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_tensor_2211.pdf)
- * 선형회귀 모델 기본[HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_2211.pdf)
- * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_fashionMnist_2211.pdf)
+ * 기본 텐서의 이해 및 기본 함수 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_tensor_V10_colab.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_01_pytorch_tensor_V10_colab.pdf)
+
+ * 딥러닝 모델 구축해 보기 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_start_colab_V10.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_02_pytorch_start_colab_V10.pdf)
+
+ * 선형회귀 모델 기본[HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_wc_V10.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_pytorch_LinearRegression_wc_V10.pdf)
+
+ * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_wine_v10_colab.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_wine_v10_colab.pdf)
+
+ * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_05_pt_fashionMnist_V10_wc.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_05_pt_fashionMnist_V10_wc.pdf)
 
 
 ### 참고 site
