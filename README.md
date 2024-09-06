@@ -17,14 +17,14 @@
  * 딥러닝 기본용어 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본용어_v11_2207.pdf) 
  * 딥러닝 기본 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL02_딥러닝기본_v12_2207.pdf) 
  * CNN 시작하기  
-   - [시작하기_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v10.pdf)
-   - [기본_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN02_알고리즘_v02_2205.pdf)
+   - [시작하기_PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL03_CNN01_알고리즘_v11.pdf)
+
    - [CNN 업그레이드](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL03_CNN03_모델UP_2207_v02.pdf)
  * 텐서플로워기본  [PDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL04_tf2.0소개_2002_v02.pdf)
  * 모델 개선(Dropout) [PDF](https://ldjwj.github.io/DL_Basic/part04_07_dl_tf2x_modelUp/DL03_02_DROPOUT.pdf)
  * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202011_v05.pdf)
 
- * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_v10.pdf) 
+ * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_v11.pdf) 
     * 2024년 9월 기준 자연어 처리 분야 등에서는 Transformer 모델로 많은 부분 대체되고 있음.
 	* 다만, Transformer 모델의 등장에도 시계열 예측, 음성 인식 등의 분야 등에서 중요한 역할로 사용될 것으로 보임. 
 	
