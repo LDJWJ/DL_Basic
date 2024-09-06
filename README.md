@@ -25,7 +25,8 @@
  * GAN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL04_기본_GAN_202011_v05.pdf)
 
  * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_v10.pdf) 
-    * 2024년 9월 기준 RNN의 많은 부분이 Transformer 모델로 대체되고 있음.
+    * 2024년 9월 기준 자연어 처리 분야 등에서는 Transformer 모델로 많은 부분 대체되고 있음.
+	* 다만, Transformer 모델의 등장에도 시계열 예측, 음성 인식 등의 분야 등에서 중요한 역할로 사용될 것으로 보임. 
 	
 ### SourceCode 
 ### 딥러닝 시작하기
