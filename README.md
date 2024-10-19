@@ -118,9 +118,14 @@
  * resnet50을 이용한 전이학습
 [HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/resnet50_Basic_01_202305.pdf)
 
-### yolo3
- * yolo3를 활용한 객체 인식
-[HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolo_basic01.html) [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolo_basic01.pdf)
+### yolo8
+ * yolo8 객체 인식 시작 - YOLO는 "You Only Look Once"의 약자 <br>
+   [HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolov8_start_01_v10.html)  
+   [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolov8_start_01_v10.pdf)
+
+ * yolo8 모델 평가 및 내용 이해, yaml 파일 만들기 <br>
+  [HTML](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolov8_start_02_v10.html)  
+  [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/yolov8_start_02_v10.pdf)
 
 ### 텍스트 OCR
  * 이미지에서 텍스트 추출
@@ -138,9 +143,6 @@
  * PUBG Finish Placement Prediction(Kernels Only) [Link](https://www.kaggle.com/competitions/pubg-finish-placement-prediction)
  * American Express - Default Prediction [Link](https://www.kaggle.com/competitions/https://www.kaggle.com/competitions/amex-default-prediction)
  * ASHRAE - Great Energy Predictor II [Link](https://www.kaggle.com/competitions/ashrae-energy-prediction)
-
-
-
 
 ### 참고 site
  * [Neural Network Playground](https://playground.tensorflow.org/) - https://playground.tensorflow.org/
