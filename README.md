@@ -83,6 +83,9 @@
  * Wine 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_wine_v10_colab.html) 
  [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_04_pytorch_wine_v10_colab.pdf)
 
+ * 타이타닉 딥러닝 모델 만들기 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_PyTorch_Simple_wColab_V01_2411.html) 
+ [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_03_PyTorch_Simple_wColab_V01_2411.pdf)
+
  * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_05_pt_fashionMnist_V10_wc.html) 
  [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_05_pt_fashionMnist_V10_wc.pdf)
 
