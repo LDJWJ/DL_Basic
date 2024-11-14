@@ -63,7 +63,7 @@
  * CNN 기본 모델 구축 (1) - [HTML](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/ch05_07_CNN_crackDetection_CNN.html)  [PDF](https://ldjwj.github.io/DL_Basic/part04_10_kaggle/ch05_07_CNN_crackDetection_CNN.pdf)
 
 ### Cat vs Dog Dataset
- * CNN colab 환경 - [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_2207.pdf)
+ * CNN colab 환경 - [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_V10_2411.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(1)_wcolab_V10_2411.pdf)
  * CNN 캐글노트북 - 기본모델(캐글노트북) [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_catvsdogs_withkaggle(1).html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_catvsdogs_withkaggle(1).pdf)
  * CNN (2) - 이미지제너레이터 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_CNN_CatvsDogs(2)_wcolab_2207.pdf)
  * CNN (3) - VGG16 [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.pdf)
@@ -93,7 +93,7 @@
     * 기본2 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_06_pytorch_kaggle_Health02_V01_2411.html) 
   [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_06_pytorch_kaggle_Health02_V01_2411.pdf)
     * 기본3 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_06_pytorch_kaggle_Health02_V03_2411.html) 
-  [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_06_pytorch_kaggle_Health02_V03_2411.pdf)
+  [PDF](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_06_pytorch_kaggle_Health03_V01_2411.pdf)
   
 
  * fashin MNIST 딥러닝 모델 구축 [HTML](https://ldjwj.github.io/DL_Basic/part06_01_pytorch/ch01_05_pt_fashionMnist_V10_wc.html) 
