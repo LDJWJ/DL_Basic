@@ -27,7 +27,10 @@
  * RNN 기본입문 [PDF](https://ldjwj.github.io/DL_Basic/딥러닝입문_DL05_기본_RNN_v11.pdf) 
     * 2024년 9월 기준 자연어 처리 분야 등에서는 Transformer 모델로 많은 부분 대체되고 있음.
 	* 다만, Transformer 모델의 등장에도 시계열 예측, 음성 인식 등의 분야 등에서 중요한 역할로 사용될 것으로 보임. 
-	
+
+ * YOLO소개 [PDF](https://ldjwj.github.io/DL_Basic/part06_02_ocr_yolo_resnet/Yolo_Intro_V12.pdf) 
+
+
 ### SourceCode 
 ### 딥러닝 시작하기
  * python 기본 함수 및 기본 라이브러리 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.html) [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.pdf)
