@@ -32,6 +32,10 @@
 
 
 ### SourceCode 
+### Notion 페이지 학습
+딥러닝 기본 및 실습 Notion [Link](https://www.notion.so/_GP510-2817d480b593802bbf3ec228ad2cafc4?source=copy_link) 
+
+
 ### 딥러닝 시작하기
  * python 기본 함수 및 기본 라이브러리 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.html) [pdf](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_01_Python_Library_V10_2211.pdf)
  * numpy 기본 [HTML](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_KerasStart_numpy_2211.html) [PDF](https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_02_KerasStart_numpy_2211.pdf)
