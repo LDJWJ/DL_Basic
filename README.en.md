@@ -2,13 +2,13 @@
 
 # DL_Basic — Intro to Deep Learning Course Materials
 
-A warm welcome to everyone who stops by! 👍 If you find this helpful, please don't just leave~~
-Hitting the **'Star' button at the top right** would mean a lot to me.^^
+A warm welcome to everyone who stops by! 👍 If you find these materials helpful,
+a click on the **Star button at the top right** would mean a lot to me.
 
 From an introduction to deep learning through MNIST, CNNs, RNNs, GANs, transfer learning (YOLO), hands-on PyTorch, and Kaggle competitions,
 this is a course library built with two frameworks: **TensorFlow/Keras** and **PyTorch**. The practice notebooks are published as HTML and PDF so anyone can open them right away.
 
-> **Note:** All slides and notebooks (PDF/HTML) are written in **Korean**. The code runs the same in any language, and your browser's built-in translation (e.g. Chrome) works on the HTML pages.
+> **Note:** All slides and notebooks (PDF/HTML) are in Korean. The code itself is language-independent, and your browser's built-in translation (e.g. Chrome) works on the HTML pages.
 
 ![GitHub stars](https://img.shields.io/github/stars/LDJWJ/DL_Basic?style=flat-square)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Basics%20to%20Project-blue?style=flat-square)
@@ -123,7 +123,7 @@ this is a course library built with two frameworks: **TensorFlow/Keras** and **P
 | Material | Format | Status |
 |:---|:---:|:---:|
 | MNIST 01 — first model (WC) | [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_WC_V11.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist01_firstmodel_WC_V11.pdf) | ✅ |
-| MNIST 02 — boosting model performance | [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.pdf) | ✅ |
+| MNIST 02 — improving model performance | [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_02_DL_mnist02_up_2207.pdf) | ✅ |
 | MNIST 03 — performance improvements | [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_03_DL_mnist03_up_2207.pdf) | ✅ |
 | MNIST 04 — EarlyStopping | [HTML](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_04_DL_mnist04_EarlyStop_2207.pdf) | ✅ |
 
@@ -164,7 +164,7 @@ this is a course library built with two frameworks: **TensorFlow/Keras** and **P
 | CNN (3) — VGG16 | [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(3)_wColab_2207.pdf) | 🚧 |
 | CNN (4) — VGG16 | [HTML](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wcolab_2207.html) · [PDF](https://ldjwj.github.io/DL_Basic/part04_05_dl_cnn_catvsdog/ch05_07_VGG_CatvsDogs(4)_wcolab_2207.pdf) | 🚧 |
 
-> Materials (2), (3), and (4) above need version updates and may not run on older versions. (as of Nov 2024)
+> Materials (2), (3), and (4) above need updating: they were written for older library versions and may not run in current environments. (as of Nov 2024)
 
 ---
 

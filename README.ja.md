@@ -8,7 +8,7 @@
 ディープラーニング入門からMNIST・CNN・RNN・GAN・転移学習（YOLO）・PyTorch実践・Kaggle参加まで、
 **TensorFlow/Keras** と **PyTorch** の2つのフレームワークで構成した講義資料室です。実習ノートブックをHTML・PDFにまとめているので、誰でもすぐに閲覧できます。
 
-> **ご注意：** 教材（PDF/HTML）はすべて **韓国語** で書かれています。コードはそのまま実行でき、HTMLページはブラウザ（Chromeなど）の自動翻訳で読むことができます。
+> **補足：** 教材（PDF/HTML）はすべて韓国語です。コード自体は言語に依存せずそのまま動作し、HTMLページはブラウザ（Chromeなど）の自動翻訳で読めます。
 
 ![GitHub stars](https://img.shields.io/github/stars/LDJWJ/DL_Basic?style=flat-square)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-Basics%20to%20Project-blue?style=flat-square)
@@ -23,7 +23,7 @@
 
 ---
 
-## 総合目次
+## 目次
 
 - [クイックスタート](#クイックスタート)
 - [1. ディープラーニングの基礎理論](#1-ディープラーニングの基礎理論)
@@ -39,7 +39,7 @@
 - [11. RNN 再帰型ニューラルネットワーク](#11-rnn-再帰型ニューラルネットワーク)
 - [12. GAN](#12-gan)
 - [13. 転移学習 物体検出 OCR](#13-転移学習-物体検出-ocr)
-- [14. Kaggle実戦](#14-kaggle実戦)
+- [14. Kaggle実践](#14-kaggle実践)
 - [代表的な実習のプレビュー](#代表的な実習のプレビュー)
 - [参考サイト](#参考サイト)
 
@@ -49,7 +49,7 @@
 
 1. **フレームワークを選びます。** どのスタックでディープラーニングを始めるか決めます。
    - **TensorFlow/Keras** → ディープラーニングの基本 · MNIST · CNN · RNN · GAN（part 04）
-   - **PyTorch** → テンソル · モデル構築 · 線形回帰 · Wine · Kaggle実戦（part 06）
+   - **PyTorch** → テンソル · モデル構築 · 線形回帰 · Wine · Kaggle実践（part 06）
 2. **実習環境をインストールします。**（約5分）
    - Windows: [TensorFlow 2.9 インストールPDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf29_window.pdf) · [インストールマニュアル（HTML）](https://ldjwj.github.io/DL_Basic/딥러닝_기본_환경_만들기_window_3_8_13(tf2.9).html)
    - macOS: [TensorFlow 2.9 インストールPDF](https://ldjwj.github.io/DL_Basic/딥러닝기본_DL01A_딥러닝기본환경만들기_tf29_mac.pdf)
@@ -237,7 +237,7 @@
 
 ---
 
-## 14. Kaggle実戦
+## 14. Kaggle実践
 
 ### 追加データセットの実習
 
@@ -279,7 +279,7 @@
 
 ## 参考サイト
 
-- [Neural Network Playground](https://playground.tensorflow.org/) — ニューラルネットワークを目で見て、自分で実験できるサイト（https://playground.tensorflow.org/）
+- [Neural Network Playground](https://playground.tensorflow.org/) — ニューラルネットワークを目で見て、自分で実験できるサイト（<https://playground.tensorflow.org/>）
 - 内容の一部は『PythonとKerasによるディープラーニング』（François Chollet著）を参考にしています。
 
 ---
