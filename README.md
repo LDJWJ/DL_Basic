@@ -1,4 +1,4 @@
-🇰🇷 **한국어** | 🇺🇸 [English](README.en.md) | 🇯🇵 [日本語](README.ja.md)
+🇰🇷 **한국어** · 🇺🇸 [English](README.en.md) · 🇯🇵 [日本語](README.ja.md)
 
 # DL_Basic — 딥러닝 입문 강의 자료
 

@@ -1,4 +1,4 @@
-🇰🇷 [한국어](README.md) | 🇺🇸 [English](README.en.md) | 🇯🇵 **日本語**
+🇰🇷 [한국어](README.md) · 🇺🇸 [English](README.en.md) · 🇯🇵 **日本語**
 
 # DL_Basic — ディープラーニング入門 講義資料
 
